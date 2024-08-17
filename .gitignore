@@ -10,5 +10,13 @@ ChatExport_*/
 # arquivos temporários
 *.aux
 *.log
-*.pdf
 *.tex
+
+# diretórios de cache
+*_files/
+
+# arquivos de output
+*.html
+*.pdf
+*.docx
+*.pptx
