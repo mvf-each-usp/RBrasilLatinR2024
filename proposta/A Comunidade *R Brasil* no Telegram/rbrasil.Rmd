@@ -1,0 +1,50 @@
+---
+type: lightning   # List of types is available using latinr_types()
+language: portuguese
+year: '`r format(Sys.Date(), "%Y")`' 
+title: "A Comunidade `R Brasil` no Telegram"
+authors:
+  - first_name: Marcelo Ventura
+    last_name: Freire
+    email: mvf@usp.br
+    country: br
+    affiliation: "Universidade de São Paulo"
+    url: "https://t.me/rbrasiloficial"  # Optional 
+    corresponding: true
+  - first_name: Segundo 
+    last_name: Autor
+    email: segundo@somemail.com
+    country: ar
+    affiliation: ["Princeton University", "Springer Heidelberg"]
+    corresponding: false
+keywords: 
+  - "comunidade"
+  - "usuários"
+  - "comunidade de usuários"
+  - "telegram"
+abstract: |
+  ***PROVISÓRIO***: 
+  Vamos apresentar (e convidá-los) a comunidade de usuários de R que usam 
+  o grupo `R Brasil` no aplicativo de mensagens instantâneas Telegram 
+  para compartilhar experiências, perspectivas, notícias, dúvidas e discussões
+  sobre o universo R e adjacências
+output: 
+    latinr::latinr_article:
+      keep_tex: false
+      anonymise: true
+params: 
+  check_is_error: true
+---
+
+```{r submission-checks, echo=FALSE, warning=TRUE}
+# Runs some basic checks in metadata. To disable, set check_is_error to FALSE
+latinr::latinr_checks(rmarkdown::metadata, params$check_is_error)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Teste
+
+Teste.
