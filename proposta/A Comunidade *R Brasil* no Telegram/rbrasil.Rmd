@@ -11,11 +11,12 @@ authors:
     affiliation: "Universidade de São Paulo"
     url: "https://t.me/rbrasiloficial"  # Optional 
     corresponding: true
-  - first_name: Segundo 
-    last_name: Autor
-    email: segundo@somemail.com
-    country: ar
-    affiliation: ["Princeton University", "Springer Heidelberg"]
+  - first_name: Leonardo Fernandes 
+    last_name: Nascimento
+    email: leofn3@gmail.com
+    country: br
+    affiliation: "Laboratório de Humanidades Digitais da UFBA (LABHDUFBA)"
+    url: "https://github.com/leofn"
     corresponding: false
 keywords: 
   - "comunidade"
