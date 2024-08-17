@@ -8,8 +8,8 @@ authors:
     last_name: Freire
     email: mvf@usp.br
     country: br
-    affiliation: "Universidade de São Paulo"
-    url: "https://t.me/rbrasiloficial"  # Optional 
+    affiliation: "Escola de Artes, Ciências e Humanidades (EACHUSP)"
+    url: ["https://t.me/rbrasiloficial", "https://github.com/mvf-each-usp"]
     corresponding: true
   - first_name: Leonardo Fernandes 
     last_name: Nascimento
@@ -49,3 +49,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Teste
 
 Teste.
+
+
