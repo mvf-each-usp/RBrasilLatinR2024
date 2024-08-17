@@ -1,0 +1,14 @@
+# arquivos do R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# arquivos de dados
+ChatExport_*/
+
+# arquivos temporários
+*.aux
+*.log
+*.pdf
+*.tex
