@@ -14,6 +14,11 @@ format:
 - ver se tem algo que dê pra aproveitar da [minha participação sobre comunidades na SatRday 2019](https://saopaulo2019.satrdays.org/)
     - só tenho material da apresentação sobre R Markdown
     - a o que falei da R Brasil foi só falado =/
+- tópicos a mencionar
+    - histórico do grupo
+    - interesses do grupo
+    - composição do grupo
+    - ??? o quê mais?
 
 
 ## reciclar depois: copy-pasta do script do Trecenti
