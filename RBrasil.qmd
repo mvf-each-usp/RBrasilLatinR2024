@@ -19,6 +19,19 @@ format:
     - interesses do grupo
     - composição do grupo
     - ??? o quê mais?
+        - sugestões do Charles: 
+            - Seria legal dar uma amostra das iniciativas que surgiram a partir do R-Brasil. Por exemplo, alguns grupos foram formados por pessoas interessadas em diferentes nichos, cito alguns:
+                a) Web-scraping Brasil (https://t.me/+Z4d0O-ZQXsQyNDJk)
+                b) Bio-R
+                c) Shiny Brasil (https://t.me/shinybrasil)
+                d) Dadoscope (https://revistaforum.com.br/opiniao/2019/7/10/dadoscope-novo-blog-na-forum-traz-jornalismo-de-dados-58299.html)
+                e) BIT Analytics (startup criada por Tarssio e Italo com a colaboração de @Koselleck)
+                f) Inúmeras colaborações em formato freelance em conjunto entre membros do grupo que mal se conhecem em pessoa (só eu já trabalhei com Tarssio, @oMarceloVentura , Marcelo Ventura -- o outro, com Neto Ferraz, @Koselleck, @FBarbalho, Arles e muitos conhecidos destas pessoas de 2017 até agora)
+            - Seria legal também identificar o volume de novos membros por dia/mes/ano... se não for possível identificar essa informação com o R podíamos usar o bot do telegram mesmo. Vou procurar aqui
+            - Por fim, acho que o mais importante é definir que história queremos contar. Queremos mostrar uma foto/perfil do R-Brasil? Queremos contar a História/Evolução do R-Brasil? 
+            - Em qualquer gráfico que fale sobre o horário das mensagens, seria bom deixar claro de qual fuso-horário aquela mensagem se refere. Fuso horário do Brasil? UTC? Não sei na verdade qual é o fuso.
+        - sugestões do Adriano Mello
+            - Uma comparação com o SOF seria bem legal. O grupo aqui é bem mais acessível e receptivo em comparação.
 
 
 ## reciclar depois: copy-pasta do script do Trecenti
