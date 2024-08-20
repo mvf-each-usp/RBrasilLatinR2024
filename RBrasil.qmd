@@ -34,7 +34,6 @@ format:
             - Uma comparação com o SOF seria bem legal. O grupo aqui é bem mais acessível e receptivo em comparação.
 
 
-## reciclar depois: copy-pasta do script do Trecenti
 
 ## Scripts do Koselleck
 
@@ -235,6 +234,10 @@ df %>%
 
 
 
+## Scripts do Trecenti
+
+Reciclar depois: copy-pasta do script do Trecenti disponibilizado na 
+[página do curso-r](https://blog.curso-r.com/posts/2019-09-10-rbrasil/)
 
 ```{r}
 #| eval: false
