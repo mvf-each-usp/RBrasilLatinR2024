@@ -43,7 +43,7 @@ format:
             - Por fim, acho que o mais importante é definir que história queremos contar. Queremos mostrar uma foto/perfil do R-Brasil? Queremos contar a História/Evolução do R-Brasil? 
             - Em qualquer gráfico que fale sobre o horário das mensagens, seria bom deixar claro de qual fuso-horário aquela mensagem se refere. Fuso horário do Brasil? UTC? Não sei na verdade qual é o fuso.
         - sugestões do [Adriano Mello](https://t.me/asmshark)
-            - Uma comparação com o SOF seria bem legal. O grupo aqui é bem mais acessível e receptivo em comparação.
+            - Uma comparação com o StackOverFlow seria bem legal. O grupo aqui é bem mais acessível e receptivo em comparação.
 
 
 
