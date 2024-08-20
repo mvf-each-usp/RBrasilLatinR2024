@@ -28,6 +28,12 @@ format:
     - interesses do grupo
     - composição do grupo
     - ??? o quê mais?
+        - minha pergunta mais respostas do Charles no `rbrasil-admins`
+            - Gente, será que dá para fazer animação de word cloud? Se tem algum jeito de gerar word cloud com alguma forma de continuidade no posicionamento das palavras ao longo do tempo?
+            - Se existe uma maneira, o craque da posição ( @Koselleck ) saberá
+            - <https://stackoverflow.com/questions/61132650/is-there-a-way-to-animate-a-word-cloud-in-r>
+            - e um bar-chart-race? como isso aqui:
+              <https://github.com/corydonbaylor/barchart-race>
         - sugestão do [Marcus](https://t.me/marcusvvl)
             - usar a imagem do cachorro como capa do trabalho  
             ![catioRinho](img/catioRo.jpg)
