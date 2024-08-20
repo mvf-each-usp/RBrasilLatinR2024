@@ -10,8 +10,17 @@ format:
 
 ## TO-DO LIST
 
-- inlcuir referência ao [trabalho do Trecenti sobre a R Brasil](https://blog.curso-r.com/posts/2019-09-10-rbrasil/)
+- fazer um histórico breve do grupo
+    - ver se dá para levantar dados históricos da evolução do grupo, como 
+        - evolução do número de membros
+        - evolução do número de mensagens
+- ver como aproveitar os dois scripts do Koselleck na 
+  [Seção *Scripts do Koselleck*](Scripts-do-Koselleck)
+- ver se ainda há algo a aproveitar no script do Trecenti na 
+  [Seção](Scripts do Trecenti)
+    - incluir referência ao [trabalho do Trecenti sobre a R Brasil](https://blog.curso-r.com/posts/2019-09-10-rbrasil/)
 - ver se tem algo que dê pra aproveitar da [minha participação sobre comunidades na SatRday 2019](https://saopaulo2019.satrdays.org/)
+    - não, não tem o que aproveitar: foi uma roda de conversa e não preparei nenhum material ou apresentação
     - só tenho material da apresentação sobre R Markdown
     - a o que falei da R Brasil foi só falado =/
 - tópicos a mencionar
@@ -19,7 +28,10 @@ format:
     - interesses do grupo
     - composição do grupo
     - ??? o quê mais?
-        - sugestões do Charles: 
+        - sugestão do [Marcus](https://t.me/marcusvvl)
+            - usar a imagem do cachorro como capa do trabalho  
+            ![catioRinho](img/catioRo.jpg)
+        - sugestões do [Charles Santana](https://t.me/BrownSantana): 
             - Seria legal dar uma amostra das iniciativas que surgiram a partir do R-Brasil. Por exemplo, alguns grupos foram formados por pessoas interessadas em diferentes nichos, cito alguns:
                 a) Web-scraping Brasil (https://t.me/+Z4d0O-ZQXsQyNDJk)
                 b) Bio-R
@@ -30,7 +42,7 @@ format:
             - Seria legal também identificar o volume de novos membros por dia/mes/ano... se não for possível identificar essa informação com o R podíamos usar o bot do telegram mesmo. Vou procurar aqui
             - Por fim, acho que o mais importante é definir que história queremos contar. Queremos mostrar uma foto/perfil do R-Brasil? Queremos contar a História/Evolução do R-Brasil? 
             - Em qualquer gráfico que fale sobre o horário das mensagens, seria bom deixar claro de qual fuso-horário aquela mensagem se refere. Fuso horário do Brasil? UTC? Não sei na verdade qual é o fuso.
-        - sugestões do Adriano Mello
+        - sugestões do [Adriano Mello](https://t.me/asmshark)
             - Uma comparação com o SOF seria bem legal. O grupo aqui é bem mais acessível e receptivo em comparação.
 
 
