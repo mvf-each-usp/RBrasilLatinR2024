@@ -1,7 +1,4 @@
-# lib
-library(lubridate)
-library(magrittr)
-library(ggplot2)
+# carregando as bibliotecas ----
 library(tidyverse)
 library(tidytext)
 ####$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
