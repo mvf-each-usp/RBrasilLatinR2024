@@ -46,7 +46,8 @@ messages <-
   fs::dir_ls(
     path,
     regexp = "messages"
-  )
+  ) |>
+  str_sort(numeric = TRUE)
 
 # carrega já parseando todas as mensagens ----
 df <-
