@@ -39,6 +39,47 @@ tudo <-
 saveRDS(tudo, "./data/tudo.rds")
 # tudo <- readRDS("./data/tudo.rds")
 
+parseia <- function(msgs) {
+  tibble(
+    id = xml_attr(msgs, "id"),
+    classe = xml_attr(msgs, "class"),
+    tipo = if_else(str_detect(classe, "service"), "serviço", "postagem"),
+    autor =
+      msgs |>
+      xml_find_first("./div/div[@class='from_name']") |>
+      xml_text() |>
+      str_squish(),
+    continuacao = str_detect(classe, "joined"),
+    data =
+      msgs |>
+      xml_find_first("./div/div[@class='pull_right date details']") |>
+      xml_attr("title") |>
+      dmy_hms(),
+    texto =
+      msgs |>
+      xml_find_first("./div/div[@class='text']") |>
+      xml_text() |>
+      str_squish(),
+    reply.to =
+      msgs |>
+      xml_find_first("./div/div[@class='reply_to details']/a") |>
+      xml_attr("href") |>
+      str_squish(),
+    entrada =
+      msgs |>
+      xml_find_first(
+        "./div[@class='message service']/div[@class='body details']"
+      ) |>
+      xml_text() |>
+      str_squish(), ### AQUI!!!!! CORRIGIR A COLETA DE ENTRADA DE USUÁRIOS ----
+    ### O QUE MAIS DEVERIA PEGAR? ----
+  ) |>
+    select(-classe)
+}
+
+mensagens_bruto <-
+  parseia(tudo)
+
 # salva em .rds ----
 saveRDS(df, file = "./data/df.rds")
 # # função parseadora dos htmls ----
