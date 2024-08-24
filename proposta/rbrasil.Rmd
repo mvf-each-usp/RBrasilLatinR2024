@@ -46,8 +46,6 @@ latinr::latinr_checks(rmarkdown::metadata, params$check_is_error)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Teste
-
-Teste.
-
+Fundado em 5 de fevereiro de 2017, o grupo R Brasil no Telegram 
+<https://t.me/rbrasiloficial> conta com 2.268 membro (em agosto de 2024)
 
