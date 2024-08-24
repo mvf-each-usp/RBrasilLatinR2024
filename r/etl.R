@@ -92,6 +92,12 @@ mensagens_bruto <-
 
 # salva em .rds ----
 saveRDS(mensagens_bruto, file = "./data/mensagens_bruto.rds")
+
+# FAZER AQUI ----
+# processar direto as mensagens
+
+
+
 # mensagens_bruto <- readRDS(file = "./data/mensagens_bruto.rds")
 # # função parseadora dos htmls ----
 # parser_telegram <- function(html_file) {
