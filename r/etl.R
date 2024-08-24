@@ -4,6 +4,8 @@ library(tidytext)
 
 # função parseadora dos htmls ----
 parser_telegram <- function(html_file) {
+  # indicador de progresso ----
+  cat(html_file |> str_extract("messages([0-9]*\\.)", group = 1))
   # pega todas as mensagens ----
   divs <- xml2::read_html(html_file) |>
     xml2::xml_find_all("//div[@class='message default clearfix']")
@@ -50,6 +52,7 @@ messages <-
   str_sort(numeric = TRUE)
 
 # carrega já parseando todas as mensagens ----
+cat("total de", length(messages), "arquivos\n")
 df <-
   purrr::map_dfr(
     messages,
