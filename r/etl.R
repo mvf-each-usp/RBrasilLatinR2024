@@ -40,14 +40,20 @@ path <-
 if (length(path) != 1)
   stop("só pode ter um único diretório 'ChatExport_*' dentro de './data'")
 
+# lista de arquivos com as msgs ----
+messages <-
+  fs::dir_ls(
+    path,
+    regexp = "messages"
+  )
 
-### list de arquivos com as msgs
-messages <- fs::dir_ls(path, regexp = "messages")
+# carrega já parseando todas as mensagens ----
+df <-
+  purrr::map_dfr(
+    messages,
+    parser_telegram,
+    .id = "arquivo"
+  )
 
-### df 05-01-2021
-df <- purrr::map_dfr(
-  messages,
-  parser_telegram,
-  .id = "arquivo")
 ########## rds
 saveRDS("df", file = "./data/df.rds")
