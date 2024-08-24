@@ -77,6 +77,16 @@ parseia <- function(msgs) {
     select(-classe)
 }
 
+
+tudo[1:50] |>
+  parseia()
+# a última coluna não pega a mensagem 26 por exemplo,
+# que é uma mensagem de entrada no grupo
+
+# um problema para resolver mais adiante:
+# a Rose passou a apagar as mensagens de entrada de novo membro;
+# isso vai atrapalhar a acompanhar a evolução do número de membros do grupo
+
 mensagens_bruto <-
   parseia(tudo)
 
