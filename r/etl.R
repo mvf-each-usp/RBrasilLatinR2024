@@ -1,6 +1,5 @@
 # carregando as bibliotecas ----
 library(tidyverse)
-library(tidytext)
 
 # função parseadora dos htmls ----
 parser_telegram <- function(html_file) {
@@ -31,6 +30,8 @@ parser_telegram <- function(html_file) {
     texto = textos
   )
 }
+# library(tidytext)  # precisa?
+library(xml2)
 
 # path dos dados ----
 ## assim, pega o path certo para qualquer data de exportação
