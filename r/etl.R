@@ -29,8 +29,17 @@ parser_telegram <- function(html_file) {
   )
 }
 
-## path (deletei os dados para nao ocupar mem do github)
-path <- "./raw/ChatExport_2024-08-18/"
+# path dos dados ----
+## assim, pega o path certo para qualquer data de exportação
+path <-
+  fs::dir_ls(
+    path = "./data/raw/",
+    type = "d",
+    regexp = "ChatExport_"
+  )
+if (length(path) != 1)
+  stop("só pode ter um único diretório 'ChatExport_*' dentro de './data'")
+
 
 ### list de arquivos com as msgs
 messages <- fs::dir_ls(path, regexp = "messages")
