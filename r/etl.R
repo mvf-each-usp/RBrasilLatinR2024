@@ -5,19 +5,19 @@ library(xml2)
 
 # path dos dados ----
 ## assim, pega o path certo para qualquer data de exportação
-path <-
+dir.raw.data <-
   fs::dir_ls(
     path = "./data/raw/",
     type = "d",
     regexp = "ChatExport_"
   )
-if (length(path) != 1)
+if (length(dir.raw.data) != 1)
   stop("só pode ter um único diretório 'ChatExport_*' dentro de './data'")
 
 # lista de arquivos com as msgs ----
-messages <-
+lista.arqs.mensagem <-
   fs::dir_ls(
-    path,
+    dir.raw.data,
     regexp = "messages"
   ) |>
   str_sort(numeric = TRUE)
