@@ -22,14 +22,6 @@ messages <-
   ) |>
   str_sort(numeric = TRUE)
 
-# carrega já parseando todas as mensagens ----
-df <-
-  {cat("total de", length(messages), "arquivos\n")
-  purrr::map_dfr(
-    messages,
-    parser_telegram,
-    .id = "arquivo"
-  )}
 
 # salva em .rds ----
 saveRDS(df, file = "./data/df.rds")
@@ -62,3 +54,12 @@ saveRDS(df, file = "./data/df.rds")
 #     texto = textos
 #   )
 # }
+# carrega já parseando todas as mensagens ----
+# ## original ----
+# df <-
+#   {cat("total de", length(mensagens), "arquivos\n")
+#     map_dfr(
+#       mensagens,
+#       parser_telegram,
+#       .id = "arquivo"
+#     )}
