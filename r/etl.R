@@ -55,5 +55,5 @@ df <-
     .id = "arquivo"
   )
 
-########## rds
-saveRDS("df", file = "./data/df.rds")
+# salva em .rds ----
+saveRDS(df, file = "./data/df.rds")
