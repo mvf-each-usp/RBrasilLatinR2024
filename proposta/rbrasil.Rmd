@@ -25,10 +25,10 @@ keywords:
   - "telegram"
 abstract: |
   ***PROVISÓRIO***: 
-  Vamos apresentar (e convidá-los) a comunidade de usuários de R que usam 
-  o grupo `R Brasil` no aplicativo de mensagens instantâneas Telegram 
-  para compartilhar experiências, perspectivas, notícias, dúvidas e discussões
-  sobre o universo R e adjacências
+  Vamos convidar vocês para conhecerem a comunidade de usuários de R que usam 
+  o grupo `R Brasil` no aplicativo de mensagens *Telegram*.  
+  Compartilhamos experiências, perspectivas, notícias, dúvidas e discussões
+  sobre o universo R e adjacências.
 output: 
     latinr::latinr_article:
       keep_tex: false
