@@ -81,7 +81,8 @@ mensagens_bruto <-
   parseia(tudo)
 
 # salva em .rds ----
-saveRDS(df, file = "./data/df.rds")
+saveRDS(mensagens_bruto, file = "./data/mensagens_bruto.rds")
+# mensagens_bruto <- readRDS(file = "./data/mensagens_bruto.rds")
 # # função parseadora dos htmls ----
 # parser_telegram <- function(html_file) {
 #   # indicador de progresso ----
