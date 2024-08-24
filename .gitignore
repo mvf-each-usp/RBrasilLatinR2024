@@ -5,7 +5,7 @@
 .Ruserdata
 
 # arquivos de dados
-ChatExport_*/
+data/
 
 # arquivos temporários
 *.aux
