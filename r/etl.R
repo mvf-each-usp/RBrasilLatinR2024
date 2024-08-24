@@ -1,6 +1,7 @@
 # carregando as bibliotecas ----
 library(tidyverse)
 library(tidytext)
+
 # função parseadora dos htmls ----
 parser_telegram <- function(html_file) {
   # pega todas as mensagens ----
