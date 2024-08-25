@@ -31,7 +31,7 @@ df1 <-
       xml_find_first(".//div[@class='from_name']") |>
       xml_text() |>
       str_squish(),
-    data =
+    data_hora =
       mensagens |>
       xml_find_first(".//div[@class='pull_right date details']") |>
       xml_attr("title") |>
@@ -114,7 +114,7 @@ df2 <-
   ) |>
   select(
     id,
-    data,
+    data_hora,
     tipo,
     autor,
     continuacao,
