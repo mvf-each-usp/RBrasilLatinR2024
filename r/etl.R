@@ -55,6 +55,12 @@ df1 <-
     ### O QUE MAIS DEVERIA PEGAR? ----
   )
 
+# AQUI!!! ----
+## um problema para resolver mais adiante: ----
+# a Rose passou a apagar as mensagens de entrada de novo membro;
+# isso vai atrapalhar a acompanhar a evolução do número de membros do grupo
+
+
 # processando as mensagens ----
 
 ## confirmando se toda mensagem com id="message-*" é de nova data ----
@@ -116,9 +122,6 @@ df2 |>
   mutate(`certo?` = str_detect(para.qual, "^[0-9]+$")) |>
   summarise(`tudo.certo?` = all(`certo?`, na.rm = TRUE))
 
-# um problema para resolver mais adiante:
-# a Rose passou a apagar as mensagens de entrada de novo membro;
-# isso vai atrapalhar a acompanhar a evolução do número de membros do grupo
 
 
 
