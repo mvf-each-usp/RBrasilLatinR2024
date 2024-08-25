@@ -99,7 +99,7 @@ df2 <-
       ),
     tipo =
       case_when(
-        str_detect(classe, "default") ~ "mensagem",
+        str_detect(classe, "default") ~ "postagem",
         ! is.na(entrou) ~ "entrada",
         .default = "service"
       ),
@@ -135,7 +135,7 @@ df4 <-
   left_join(
     df3,
     df3 |>
-      filter(tipo == "mensagem") |>
+      filter(tipo == "postagem") |>
       transmute(id, para.quem = autor),
     by = c(para.qual = "id")
   ) |>
