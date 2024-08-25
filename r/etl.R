@@ -14,25 +14,11 @@ dir.raw.data <-
 if (length(dir.raw.data) != 1)
   stop("só pode ter um único diretório 'ChatExport_*' dentro de './data'")
 
-# lista de arquivos com as msgs ----
-lista.arqs.mensagem <-
-  fs::dir_ls(
-    dir.raw.data,
-    regexp = "messages"
-  ) |>
-  str_sort(numeric = TRUE)
-
-# carrega todas a <div class='history'>  ----
-cat("total de", length(lista.arqs.mensagem), "arquivos\n")
-tudo <-
-  map(
-    lista.arqs.mensagem,
-    \(msg) {
-      cat(msg |> str_extract("messages([0-9]*\\.)", group = 1))
-      read_html(msg) |>
-        xml_find_first("//div[@class='history']")
-    }
-  ) |>
+# carrega tudo e filtra só as mensagens ----
+mensagens <-
+  fs::dir_ls(dir.raw.data, regexp = "messages") |>
+  str_sort(numeric = TRUE) |>
+  map(read_html) |>
   reduce(xml_add_sibling) |>
   xml_find_all("//div[contains(@class, 'message')]")
 
