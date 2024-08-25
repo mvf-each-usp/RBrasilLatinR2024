@@ -147,6 +147,8 @@ df4 <-
     .after = para.qual
   )
 
+# salvando o data frame com as mensagens ----
+saveRDS(df4, "./data/mensagens.rds")
 
 
 # mensagens_bruto <- readRDS(file = "./data/mensagens_bruto.rds")
