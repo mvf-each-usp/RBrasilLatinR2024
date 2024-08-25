@@ -1,6 +1,5 @@
 # carregando as bibliotecas ----
 library(tidyverse)
-# library(tidytext)  # precisa?
 library(xml2)
 
 # path dos dados ----
@@ -132,8 +131,6 @@ df3 <-
     para.qual = as.integer(para.qual),
   )
 
-# FAZER AQUI ----
-# processar direto as mensagens
 df4 <-
   left_join(
     df3,
