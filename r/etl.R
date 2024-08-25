@@ -123,10 +123,29 @@ df2 |>
   summarise(`tudo.certo?` = all(`certo?`, na.rm = TRUE))
 
 
+## só falta saber para quem foram os replies
 
+df3 <-
+  df2 |>
+  mutate(
+    id = as.integer(id),
+    para.qual = as.integer(para.qual),
+  )
 
 # FAZER AQUI ----
 # processar direto as mensagens
+df4 <-
+  left_join(
+    df3,
+    df3 |>
+      filter(tipo == "mensagem") |>
+      transmute(id, para.quem = autor),
+    by = c(para.qual = "id")
+  ) |>
+  relocate(
+    para.quem,
+    .after = para.qual
+  )
 
 
 
