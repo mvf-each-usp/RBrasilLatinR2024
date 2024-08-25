@@ -29,23 +29,23 @@ parseia <- function(msgs) {
     tipo = if_else(str_detect(classe, "service"), "serviço", "postagem"),
     autor =
       msgs |>
-      xml_find_first("./div/div[@class='from_name']") |>
+      xml_find_first(".//div[@class='from_name']") |>
       xml_text() |>
       str_squish(),
     continuacao = str_detect(classe, "joined"),
     data =
       msgs |>
-      xml_find_first("./div/div[@class='pull_right date details']") |>
+      xml_find_first(".//div[@class='pull_right date details']") |>
       xml_attr("title") |>
       dmy_hms(),
     texto =
       msgs |>
-      xml_find_first("./div/div[@class='text']") |>
+      xml_find_first(".//div[@class='text']") |>
       xml_text() |>
       str_squish(),
     reply.to =
       msgs |>
-      xml_find_first("./div/div[@class='reply_to details']/a") |>
+      xml_find_first(".//div[@class='reply_to details']/a") |>
       xml_attr("href") |>
       str_squish(),
     entrada =
