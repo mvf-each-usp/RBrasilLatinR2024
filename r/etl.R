@@ -88,13 +88,15 @@ df1 |>
 ### beleza! ----
 
 ## incluindo as colunas derivadas das raspadas ----
+completa.na <- function(v) v[pmax(1, cummax(seq_along(v) * !is.na(v)))]
+
 df2 <-
   df1 |>
   filter(!str_detect(id, "message-")) |> # tirando msg de novo dia
   mutate(
     id = str_extract(id, "[0-9]+$"),
     continuacao = str_detect(classe, "joined"),
-    autor = if_else(continuacao, lag(autor), autor), # completando
+    autor = if_else(continuacao, completa.na(autor), autor), # completando
     resposta = !is.na(reply.to),
     para.qual = reply.to |> str_extract("message([0-9]+)$", group = 1),
     entrou =
@@ -122,11 +124,23 @@ df2 <-
     texto,
   )
 
+## confirmando se preencheu os nomes direito ----
+with(
+  df2 |>
+    mutate(
+      autor = if_else(is.na(autor), "sem", "com"),
+      mens = if_else(continuacao, "contin", "inicial")
+    )
+  ,
+  table(autor, mens, tipo)
+)
+## beleza
+
 ## confirmando se todas os reply.to estão no mesmo formato ----
 df2 |>
   mutate(`certo?` = str_detect(para.qual, "^[0-9]+$")) |>
   summarise(`tudo.certo?` = all(`certo?`, na.rm = TRUE))
-
+## beleza
 
 ## só falta saber para quem foram os replies
 
