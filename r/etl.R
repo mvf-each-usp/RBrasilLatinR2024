@@ -25,7 +25,6 @@ mensagens <-
 # parse das mensagens para data frame ----
 df1 <-
   tibble(
-    tipo = if_else(str_detect(classe, "service"), "serviço", "postagem"),
     id = xml_attr(mensagens, "id"),
     classe = xml_attr(mensagens, "class"),
     autor =
@@ -33,7 +32,6 @@ df1 <-
       xml_find_first(".//div[@class='from_name']") |>
       xml_text() |>
       str_squish(),
-    continuacao = str_detect(classe, "joined"),
     data =
       mensagens |>
       xml_find_first(".//div[@class='pull_right date details']") |>
@@ -79,6 +77,39 @@ df1 |>
   )
 ### beleza! ----
 
+## incluindo as colunas derivadas das raspadas ----
+df2 <-
+  df1 |>
+  filter(!str_detect(id, "message-")) |> # tirando msg de novo dia
+  mutate(
+    id = str_extract(id, "[0-9]+$"),
+    continuacao = str_detect(classe, "joined"),
+    resposta = !is.na(reply.to),
+    para.qual = reply.to |> str_extract("message([0-9]+)$", group = 1),
+    entrou =
+      if_else(
+        str_detect(service.text, " invited "),
+        str_remove(service.text, "^.* invited ") ,
+        NA_character_
+      ),
+    tipo =
+      case_when(
+        str_detect(classe, "default") ~ "mensagem",
+        ! is.na(entrou) ~ "entrada",
+        .default = "service"
+      ),
+  ) |>
+  select(
+    id,
+    data,
+    tipo,
+    autor,
+    continuacao,
+    resposta,
+    para.qual,
+    entrou,
+    texto,
+  )
 
 
 # um problema para resolver mais adiante:
