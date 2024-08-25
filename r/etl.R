@@ -49,7 +49,7 @@ df1 <-
       xml_find_first(".//div[@class='reply_to details']/a") |>
       xml_attr("href") |>
       str_squish(),
-    entrada =
+    service.text =
       mensagens |>
       xml_find_first(".//div[@class='body details']") |>
       xml_text() |>
