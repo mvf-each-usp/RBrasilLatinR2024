@@ -57,7 +57,27 @@ df1 <-
     ### O QUE MAIS DEVERIA PEGAR? ----
   )
 
+# processando as mensagens ----
+
+## confirmando se toda mensagem com id="message-*" é de nova data ----
+df1 |>
+  filter(str_detect(id, "message-")) |>
+  mutate(
+    `eh.data?` =
+      str_detect(
+        service.text,
+        paste0(
+          "[0-9]{1,2} ",
+          "(January|February|March|April|May|June|July|",
+          "August|September|October|November|December)",
+          " 20[12][0-9]"
+        )
+      )
   ) |>
+  summarise(
+    `tudo.data?` = all(`eh.data?`)
+  )
+### beleza! ----
 
 
 
