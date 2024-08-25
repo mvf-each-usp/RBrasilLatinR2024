@@ -50,11 +50,9 @@ parseia <- function(msgs) {
       str_squish(),
     entrada =
       msgs |>
-      xml_find_first(
-        "./div[@class='message service']/div[@class='body details']"
-      ) |>
+      xml_find_first(".//div[@class='body details']") |>
       xml_text() |>
-      str_squish(), ### AQUI!!!!! CORRIGIR A COLETA DE ENTRADA DE USUÁRIOS ----
+      str_squish(),
     ### O QUE MAIS DEVERIA PEGAR? ----
   ) |>
     select(-classe)
