@@ -111,6 +111,10 @@ df2 <-
     texto,
   )
 
+## confirmando se todas os reply.to estão no mesmo formato ----
+df2 |>
+  mutate(`certo?` = str_detect(para.qual, "^[0-9]+$")) |>
+  summarise(`tudo.certo?` = all(`certo?`, na.rm = TRUE))
 
 # um problema para resolver mais adiante:
 # a Rose passou a apagar as mensagens de entrada de novo membro;
