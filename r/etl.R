@@ -22,9 +22,6 @@ mensagens <-
   reduce(xml_add_sibling) |>
   xml_find_all("//div[contains(@class, 'message')]")
 
-saveRDS(tudo, "./data/tudo.rds")
-# tudo <- readRDS("./data/tudo.rds")
-
 parseia <- function(msgs) {
   tibble(
     id = xml_attr(msgs, "id"),
@@ -76,8 +73,6 @@ tudo[1:50] |>
 mensagens_bruto <-
   parseia(tudo)
 
-# salva em .rds ----
-saveRDS(mensagens_bruto, file = "./data/mensagens_bruto.rds")
 
 # FAZER AQUI ----
 # processar direto as mensagens
