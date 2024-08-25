@@ -94,6 +94,7 @@ df2 <-
   mutate(
     id = str_extract(id, "[0-9]+$"),
     continuacao = str_detect(classe, "joined"),
+    autor = if_else(continuacao, lag(autor), autor), # completando
     resposta = !is.na(reply.to),
     para.qual = reply.to |> str_extract("message([0-9]+)$", group = 1),
     entrou =
