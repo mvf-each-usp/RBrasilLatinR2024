@@ -54,6 +54,11 @@ df1 <-
     ### O QUE MAIS DEVERIA PEGAR? ----
   )
 
+# savepoint ----
+## salvando a versão preliminar para não ter que rerrodar tudo
+## saveRDS(df1, "./data/df1.rds")
+## df1 <- readRDS("./data/df1.rds") ----
+
 # AQUI!!! ----
 ## um problema para resolver mais adiante: ----
 # a Rose passou a apagar as mensagens de entrada de novo membro;
