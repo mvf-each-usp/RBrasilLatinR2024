@@ -43,6 +43,10 @@ latinr::latinr_checks(rmarkdown::metadata, params$check_is_error)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Fundado em 5 de fevereiro de 2017, o grupo R Brasil no Telegram 
-<https://t.me/rbrasiloficial> conta com 2.268 membro (em agosto de 2024)
+
+Convidaremos os participantes da LatinR 2024 a conhecerem a fervilhante comunidade 
+`R Brasil` no *Telegram*, que existe desde 2017. Apresentaremos como são as 
+características do grupo e da comunidade, bem como potencialidades de interesses 
+para o público deste evento. Em nossa comunidade, compartilhamos experiências, 
+perspectivas, notícias, dúvidas e discussões sobre o universo R e suas adjacências.
 
