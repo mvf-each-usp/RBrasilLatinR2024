@@ -1,5 +1,5 @@
 ---
-type: oral   # por sugestão da Bea Milz
+type: lightning   # por sugestão da Bea Milz
 language: portuguese
 year: '`r format(Sys.Date(), "%Y")`' 
 title: "A Comunidade `R Brasil` no Telegram"
