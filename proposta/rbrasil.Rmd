@@ -57,7 +57,8 @@ Pretendemos realizar uma apresentação que seguirá estas linhas:
     <!--     - o *grupo* R Brasil do Telegram -->
     <!--     - a *comunidade* R Brasil de membros do grupo R Brasil  -->
 - O *Grupo* R Brasil
-    - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017
+    - breve histórico
+    <!-- - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017 -->
     - números rápidos em 25/08/2024
         <!-- - 170190 mensagens postadas -->
         <!-- - 13810 links compartilhados -->
