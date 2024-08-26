@@ -71,3 +71,5 @@ Pretendemos realizar uma apresentação que seguirá estas linhas:
     - alguns grupos surgidos da R Brasil 
     - iniciativas que surgiram de membros que se conheceram na R Brasil
 - Para entrar no grupo
+
+Com essa apresentação, temos o objetivo de permitir que os participantes deste evento possam conhecer o grupo e avaliar se têm interesse em participar dele.
