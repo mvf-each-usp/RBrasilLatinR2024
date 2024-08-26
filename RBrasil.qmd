@@ -229,22 +229,22 @@ library(tidytext)
 ####$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 parser_telegram <- function(html_file) {
   # pega todas as mensagens
-  divs <- xml2::read_html(html_file) %>%
+  divs <- xml2::read_html(html_file) |>
     xml2::xml_find_all("//div[@class='message default clearfix']")
   # nome da pessoa
-  nomes <- divs %>%
-    xml2::xml_find_all("./div/div[@class='from_name']") %>%
-    xml2::xml_text() %>%
+  nomes <- divs |>
+    xml2::xml_find_all("./div/div[@class='from_name']") |>
+    xml2::xml_text() |>
     stringr::str_squish()
   # data e hora da mensagem
-  data_horas <- divs %>%
-    xml2::xml_find_all("./div/div[@class='pull_right date details']") %>%
-    xml2::xml_attr("title") %>%
+  data_horas <- divs |>
+    xml2::xml_find_all("./div/div[@class='pull_right date details']") |>
+    xml2::xml_attr("title") |>
     lubridate::dmy_hms()
   # texto da mensagem
-  textos <- divs %>%
-    purrr::map(xml2::xml_find_first, "./div/div[@class='text']") %>%
-    purrr::map_chr(xml2::xml_text) %>%
+  textos <- divs |>
+    purrr::map(xml2::xml_find_first, "./div/div[@class='text']") |>
+    purrr::map_chr(xml2::xml_text) |>
     stringr::str_squish()
   # retorna numa tabela
   tibble::tibble(
@@ -322,9 +322,9 @@ plotly_plot
 
 ## Total de mensagens ao longo do tempo
 
-plot2 <- df %>%
-  dplyr::mutate(mes = lubridate::floor_date(data_hora, "month")) %>%
-  dplyr::count(mes) %>%
+plot2 <- df |>
+  dplyr::mutate(mes = lubridate::floor_date(data_hora, "month")) |>
+  dplyr::count(mes) |>
   ggplot(aes(x = mes, y = n)) +
   geom_line(color = "darkblue", size = 1) +  # Line color and thickness
   geom_point(color = "darkred", size = 3) +  # Point color and size
@@ -340,14 +340,14 @@ plotly_plot2 <- ggplotly(plot2)
 plotly_plot2
 
 ### total de mensagens por user ao longo do tempo
-df %>%
-  dplyr::filter(nome != "Deleted Account") %>%
+df |>
+  dplyr::filter(nome != "Deleted Account") |>
   dplyr::mutate(nome = forcats::fct_lump(nome, 12),
                 nome = as.character(nome),
-                mes = lubridate::floor_date(data_hora, "month")) %>%
-  dplyr::filter(nome != "Other") %>%
-  dplyr::count(mes, nome, sort = TRUE) %>%
-  tidyr::complete(mes, nome, fill = list(n = 0)) %>%
+                mes = lubridate::floor_date(data_hora, "month")) |>
+  dplyr::filter(nome != "Other") |>
+  dplyr::count(mes, nome, sort = TRUE) |>
+  tidyr::complete(mes, nome, fill = list(n = 0)) |>
   ggplot(aes(x = mes, y = n)) +
   geom_line() +
   facet_wrap(~nome) +
@@ -357,8 +357,8 @@ df %>%
 
 ## hora que mais interagimos
 
-df %>%
-  dplyr::mutate(hora = factor(lubridate::hour(data_hora))) %>%
+df |>
+  dplyr::mutate(hora = factor(lubridate::hour(data_hora))) |>
   ggplot(aes(x = hora)) +
   geom_bar(fill = "royalblue") +
   theme_minimal(14) +
@@ -368,8 +368,8 @@ df %>%
 
 ## o dia da semana
 
-df %>%
-  dplyr::mutate(wd = lubridate::wday(data_hora, label = TRUE)) %>%
+df |>
+  dplyr::mutate(wd = lubridate::wday(data_hora, label = TRUE)) |>
   ggplot(aes(x = wd)) +
   geom_bar(fill = "blue") +
   theme_minimal(14) +
@@ -379,24 +379,24 @@ df %>%
 
 # dá pra criar funções anônimas assim ;)
 # esse é um limpador bem safado que fiz em 1 min
-limpar <- . %>%
-  abjutils::rm_accent() %>%
-  stringr::str_to_title() %>%
-  stringr::str_remove_all("[^a-zA-Z0-9 ]") %>%
-  stringr::str_remove_all("Pra") %>%
+limpar <- . |>
+  abjutils::rm_accent() |>
+  stringr::str_to_title() |>
+  stringr::str_remove_all("[^a-zA-Z0-9 ]") |>
+  stringr::str_remove_all("Pra") |>
   stringr::str_squish()
 library('abjutils')
 # tirar palavras que nao quero
-banned <- tidytext::get_stopwords("pt") %>%
+banned <- tidytext::get_stopwords("pt") |>
   dplyr::mutate(palavra = limpar(word))
 
 cores <- viridis::viridis(10, begin = 0, end = 0.8)
 
-df %>%
-  tidytext::unnest_tokens(palavra, texto) %>%
-  dplyr::mutate(palavra = limpar(palavra)) %>%
-  dplyr::anti_join(banned, "palavra") %>%
-  dplyr::count(palavra, sort = TRUE) %>%
+df |>
+  tidytext::unnest_tokens(palavra, texto) |>
+  dplyr::mutate(palavra = limpar(palavra)) |>
+  dplyr::anti_join(banned, "palavra") |>
+  dplyr::count(palavra, sort = TRUE) |>
   with(wordcloud::wordcloud(
     palavra, n, scale = c(5, .1),
     min.freq = 80, random.order = FALSE,
@@ -418,25 +418,25 @@ library(magrittr)
 
 ler_html_telegram <- function(html_file) {
   # pega todas as mensagens
-  divs <- xml2::read_html(html_file) %>% 
+  divs <- xml2::read_html(html_file) |> 
     xml2::xml_find_all("//div[@class='message default clearfix']")
   
   # nome da pessoa
-  nomes <- divs %>% 
-    xml2::xml_find_all("./div/div[@class='from_name']") %>% 
-    xml2::xml_text() %>% 
+  nomes <- divs |> 
+    xml2::xml_find_all("./div/div[@class='from_name']") |> 
+    xml2::xml_text() |> 
     stringr::str_squish()
   
   # data e hora da mensagem
-  data_horas <- divs %>% 
-    xml2::xml_find_all("./div/div[@class='pull_right date details']") %>% 
-    xml2::xml_attr("title") %>% 
+  data_horas <- divs |> 
+    xml2::xml_find_all("./div/div[@class='pull_right date details']") |> 
+    xml2::xml_attr("title") |> 
     lubridate::dmy_hms()
   
   # texto da mensagem
-  textos <- divs %>% 
-    purrr::map(xml2::xml_find_first, "./div/div[@class='text']") %>% 
-    purrr::map_chr(xml2::xml_text) %>% 
+  textos <- divs |> 
+    purrr::map(xml2::xml_find_first, "./div/div[@class='text']") |> 
+    purrr::map_chr(xml2::xml_text) |> 
     stringr::str_squish()
   
   # retorna numa tabela
@@ -462,19 +462,19 @@ d_msg <- purrr::map_dfr(
 
 ```{r}
 #| eval: false
-d_msg %>% 
-  dplyr::count(nome, sort = TRUE) %>% 
-  dplyr::mutate(prop = scales::percent(n/sum(n))) %>% 
-  head(10) %>% 
+d_msg |> 
+  dplyr::count(nome, sort = TRUE) |> 
+  dplyr::mutate(prop = scales::percent(n/sum(n))) |> 
+  head(10) |> 
   knitr::kable()
 ```
 
 ```{r}
 #| eval: false
 library(ggplot2)
-d_msg %>% 
-  dplyr::mutate(mes = lubridate::floor_date(data_hora, "month")) %>% 
-  dplyr::count(mes) %>% 
+d_msg |> 
+  dplyr::mutate(mes = lubridate::floor_date(data_hora, "month")) |> 
+  dplyr::count(mes) |> 
   ggplot(aes(x = mes, y = n)) +
   geom_line() +
   geom_point() +
@@ -483,14 +483,14 @@ d_msg %>%
 
 ```{r}
 #| eval: false
-d_msg %>% 
-  dplyr::filter(nome != "Deleted Account") %>% 
+d_msg |> 
+  dplyr::filter(nome != "Deleted Account") |> 
   dplyr::mutate(nome = forcats::fct_lump(nome, 12),
                 nome = as.character(nome),
-                mes = lubridate::floor_date(data_hora, "month")) %>% 
-  dplyr::filter(nome != "Other") %>% 
-  dplyr::count(mes, nome, sort = TRUE) %>% 
-  tidyr::complete(mes, nome, fill = list(n = 0)) %>% 
+                mes = lubridate::floor_date(data_hora, "month")) |> 
+  dplyr::filter(nome != "Other") |> 
+  dplyr::count(mes, nome, sort = TRUE) |> 
+  tidyr::complete(mes, nome, fill = list(n = 0)) |> 
   ggplot(aes(x = mes, y = n)) +
   geom_line() +
   facet_wrap(~nome) +
@@ -500,8 +500,8 @@ d_msg %>%
 
 ```{r}
 #| eval: false
-d_msg %>% 
-  dplyr::mutate(hora = factor(lubridate::hour(data_hora))) %>% 
+d_msg |> 
+  dplyr::mutate(hora = factor(lubridate::hour(data_hora))) |> 
   ggplot(aes(x = hora)) +
   geom_bar(fill = "royalblue") +
   theme_minimal(14) +
@@ -510,8 +510,8 @@ d_msg %>%
 
 ```{r}
 #| eval: false
-d_msg %>% 
-  dplyr::mutate(wd = lubridate::wday(data_hora, label = TRUE)) %>% 
+d_msg |> 
+  dplyr::mutate(wd = lubridate::wday(data_hora, label = TRUE)) |> 
   ggplot(aes(x = wd)) +
   geom_bar(fill = "pink2") +
   theme_minimal(14) +
@@ -522,23 +522,23 @@ d_msg %>%
 #| eval: false
 # dá pra criar funções anônimas assim ;)
 # esse é um limpador bem safado que fiz em 1 min
-limpar <- . %>% 
-  abjutils::rm_accent() %>% 
-  stringr::str_to_title() %>% 
-  stringr::str_remove_all("[^a-zA-Z0-9 ]") %>% 
+limpar <- . |> 
+  abjutils::rm_accent() |> 
+  stringr::str_to_title() |> 
+  stringr::str_remove_all("[^a-zA-Z0-9 ]") |> 
   stringr::str_squish()
 
 # tirar palavras que nao quero
-banned <- tidytext::get_stopwords("pt") %>% 
+banned <- tidytext::get_stopwords("pt") |> 
   dplyr::mutate(palavra = limpar(word))
 
 cores <- viridis::viridis(10, begin = 0, end = 0.8)
 
-d_msg %>% 
-  tidytext::unnest_tokens(palavra, texto) %>% 
-  dplyr::mutate(palavra = limpar(palavra)) %>% 
-  dplyr::anti_join(banned, "palavra") %>% 
-  dplyr::count(palavra, sort = TRUE) %>% 
+d_msg |> 
+  tidytext::unnest_tokens(palavra, texto) |> 
+  dplyr::mutate(palavra = limpar(palavra)) |> 
+  dplyr::anti_join(banned, "palavra") |> 
+  dplyr::count(palavra, sort = TRUE) |> 
   with(wordcloud::wordcloud(
     palavra, n, scale = c(5, .1), 
     min.freq = 80, random.order = FALSE,
