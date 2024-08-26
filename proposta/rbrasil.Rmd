@@ -50,3 +50,24 @@ características do grupo e da comunidade, bem como potencialidades de interesse
 para o público deste evento. Em nossa comunidade, compartilhamos experiências, 
 perspectivas, notícias, dúvidas e discussões sobre o universo R e suas adjacências.
 
+Pretendemos realizar uma apresentação que seguirá estas linhas:
+
+- R Brasil no Telegram
+- O *Grupo* R Brasil
+    - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017
+    - números rápidos em 25/08/2024
+    - evolução do grupo ao longo do tempo
+    - objetivos do grupo
+- A *Comunidade* R Brasil
+    - diversidade de formações 
+    - diversidade de atuação 
+    - diversidade de interesses
+        - interesses específicos: programação em R
+        - interesses circundantes: o que afeta e é afetado pelo uso do R
+        - interesses em aplicações específicas: onde o R pode ser usado
+        - divulgação: onde, quando e como o R pode te alavancar
+    - diversidade de localização
+- Resultados das interações entre os membros da R Brasil
+    - alguns grupos surgidos da R Brasil 
+    - iniciativas que surgiram de membros que se conheceram na R Brasil
+- Para entrar no grupo
