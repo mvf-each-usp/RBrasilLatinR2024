@@ -27,9 +27,9 @@ abstract: |
   Vamos apresentar a comunidade de usuários de R membros do grupo `R Brasil` 
   no aplicativo de mensagens *Telegram*.
 output: 
-    latinr::latinr_article:
-      keep_tex: false
-      anonymise: true
+  latinr::latinr_article:
+    keep_tex: false
+    anonymise: true
 params: 
   check_is_error: true
 ---
