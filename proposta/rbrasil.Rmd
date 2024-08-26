@@ -59,7 +59,8 @@ Pretendemos realizar uma apresentação que seguirá estas linhas:
 - O *Grupo* R Brasil
     - breve histórico
     <!-- - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017 -->
-    - números rápidos em 25/08/2024
+    - números rápidos
+    <!-- - números rápidos em 25/08/2024 -->
         <!-- - 170190 mensagens postadas -->
         <!-- - 13810 links compartilhados -->
         <!-- - 7274 fotos -->
