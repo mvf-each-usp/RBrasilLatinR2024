@@ -24,11 +24,8 @@ keywords:
   - "comunidade de usuários"
   - "telegram"
 abstract: |
-  ***PROVISÓRIO***: 
-  Vamos convidar vocês para conhecerem a comunidade de usuários de R que usam 
-  o grupo `R Brasil` no aplicativo de mensagens *Telegram*.  
-  Compartilhamos experiências, perspectivas, notícias, dúvidas e discussões
-  sobre o universo R e adjacências.
+  Vamos apresentar a comunidade de usuários de R membros do grupo `R Brasil` 
+  no aplicativo de mensagens *Telegram*.
 output: 
     latinr::latinr_article:
       keep_tex: false
