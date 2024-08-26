@@ -53,23 +53,93 @@ perspectivas, notícias, dúvidas e discussões sobre o universo R e suas adjac�
 Pretendemos realizar uma apresentação que seguirá estas linhas:
 
 - R Brasil no Telegram
+    <!-- - Mas é *O* R Brasil ou é *A* R Brasil? -->
+    <!--     - o *grupo* R Brasil do Telegram -->
+    <!--     - a *comunidade* R Brasil de membros do grupo R Brasil  -->
 - O *Grupo* R Brasil
     - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017
     - números rápidos em 25/08/2024
+        <!-- - 170190 mensagens postadas -->
+        <!-- - 13810 links compartilhados -->
+        <!-- - 7274 fotos -->
+        <!-- - 2758 dias de existência e crescendo -->
+        <!-- - 2266 membros atuais -->
+        <!-- - 697 arquivos -->
+        <!-- - 78 videos -->
+        <!-- - 65 mensagens de voz -->
+        <!-- - 13 admins -->
+        <!-- - 1 servidor no discord de backup para "emergências"  ;) -->
     - evolução do grupo ao longo do tempo
+        <!-- - número de membros -->
+        <!-- - número de mensagens -->
     - objetivos do grupo
+        <!-- - compartilhar conhecimento -->
+        <!-- - tirar dúvidas -->
+        <!-- - colocar pessoas em contato -->
+        <!-- - abrir portas -->
 - A *Comunidade* R Brasil
     - diversidade de formações 
+        <!-- - biólogos, ecologistas -->
+        <!-- - computeiros, estatísticos, matemáticos -->
+        <!-- - advogados, jurimestristas -->
+        <!-- - geógrafos, geólogos, gestores ambientais -->
+        <!-- - médicos, psicólogos, psicometristas -->
+        <!-- - mercadólogos, administradores, economistas -->
+        <!-- - engenheiros -->
+        <!-- - jornalistas -->
+        <!-- - entre outras -->
     - diversidade de atuação 
+        <!-- - profissionais e estudantes -->
+        <!-- - setor público, setor privado e terceiro setor -->
+        <!-- - profissionais e pesquisadores acadêmicos -->
+        <!-- - freelancers e funcionários -->
     - diversidade de interesses
         - interesses específicos: programação em R
+            <!-- - apresentações de dúvidas e dificuldades com código -->
+            <!-- - pedidos de colaboração em código e repositórios -->
+            <!-- - sugestões, brainstormings e "solution racings" -->
         - interesses circundantes: o que afeta e é afetado pelo uso do R
+            <!-- - modelagem e análise de dados  -->
+            <!-- - métodos estatísticos, técnicas de machine learning etc. -->
+            <!-- - manuseio de dados -->
+            <!-- - tecnologias para big data -->
+            <!-- - visualização de dados e dashboard -->
+            <!-- - raspagem e mineiração de dados -->
+            <!-- - desenvolvimento de pacotes -->
+            <!-- - ciência de dados e soluções integrativas -->
+            <!-- - comparativos de aspectos com outras linguagens -->
+            <!-- - interações do R com sistemas operacionais -->
+            <!-- - portabilidade de dados entre plataformas e na internet -->
         - interesses em aplicações específicas: onde o R pode ser usado
+            <!-- - jurimetria -->
+            <!-- - dados ambientais -->
+            <!-- - dados georreferenciados -->
+            <!-- - dados abertos e transparência pública -->
+            <!-- - jornalismo de dados -->
+            <!-- - negócios -->
+            <!-- - entre outros -->
         - divulgação: onde, quando e como o R pode te alavancar
+            <!-- - vagas e oportunidades -->
+            <!-- - cursos sobre R e afins -->
     - diversidade de localização
+        <!-- - membros originários do Brasil inteiro -->
+        <!-- - também há vários portugueses na R Brasil -->
+        <!-- - há vários membros localizados fora do Brasil  -->
 - Resultados das interações entre os membros da R Brasil
     - alguns grupos surgidos da R Brasil 
+        <!-- - Web-scraping Brasil (<https://t.me/+Z4d0O-ZQXsQyNDJk>) -->
+        <!-- - Bio-R  -->
+        <!-- - Shiny Brasil (<https://t.me/shinybrasi>) -->
     - iniciativas que surgiram de membros que se conheceram na R Brasil
+        <!-- - Dadoscope  -->
+        <!--     - <https://github.com/dadoscope> -->
+        <!--     - <https://revistaforum.com.br/opiniao/2019/7/10/dadoscope-novo-blog-na-forum-traz-jornalismo-de-dados-58299.html> -->
+        <!-- - diversas colaborações em freelance -->
+        <!-- - várias colaborações acadêmica -->
+        <!-- - algumas startups -->
+        <!-- - entre outras -->
 - Para entrar no grupo
+    <!-- - <https://t.me/rbrasiloficial> -->
+
 
 Com essa apresentação, temos o objetivo de permitir que os participantes deste evento possam conhecer o grupo e avaliar se têm interesse em participar dele.
