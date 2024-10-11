@@ -29,7 +29,7 @@ abstract: |
 output: 
   latinr::latinr_article:
     keep_tex: false
-    anonymise: true
+    anonymise: false
 params: 
   check_is_error: true
 ---
