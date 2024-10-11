@@ -186,7 +186,7 @@ plotly_plot1
 
 plot2 <- 
   raspagem$postagem |> 
-  mutate(mes = data |> floor_date("months")) |>
+  mutate(mes = data_hora |> floor_date("month")) |>
   count(mes) |>
   ggplot(aes(x = mes, y = n)) +
   geom_line(color = "darkblue", size = 1) +  # Line color and thickness
@@ -202,26 +202,27 @@ plotly_plot2 <- ggplotly(plot2)
 # Display the Plotly plot
 plotly_plot2
 
-### total de mensagens por user ao longo do tempo
-df |>
-  dplyr::filter(nome != "Deleted Account") |>
-  dplyr::mutate(nome = forcats::fct_lump(nome, 12),
-                nome = as.character(nome),
-                mes = lubridate::floor_date(data_hora, "month")) |>
-  dplyr::filter(nome != "Other") |>
-  dplyr::count(mes, nome, sort = TRUE) |>
-  tidyr::complete(mes, nome, fill = list(n = 0)) |>
+# total de mensagens por user ao longo do tempo ----
+raspagem$postagem |>
+  filter(autor != "Deleted Account") |>
+  mutate(
+    autor = autor |> fct_lump(12) |> as.character(),
+    mes = data_hora |> floor_date("month")
+  ) |>
+  filter(autor != "Other") |>
+  count(mes, autor, sort = TRUE) |>
+  complete(mes, autor, fill = list(n = 0)) |>
   ggplot(aes(x = mes, y = n)) +
   geom_line() +
-  facet_wrap(~nome) +
+  facet_wrap(~autor) +
   labs(x = "Mês", y = "Quantidade de mensagens") +
   ggtitle("Frequência de mensagens por usário no R-Brasil")+
   theme_bw()
 
 # hora que mais interagimos ----
 
-df |>
-  dplyr::mutate(hora = factor(lubridate::hour(data_hora))) |>
+raspagem$postagem |>
+  mutate(hora = data_hora |> hour() |> factor()) |>
   ggplot(aes(x = hora)) +
   geom_bar(fill = "royalblue") +
   theme_minimal(14) +
@@ -231,8 +232,8 @@ df |>
 
 # o dia da semana ----
 
-df |>
-  dplyr::mutate(wd = lubridate::wday(data_hora, label = TRUE)) |>
+raspagem$postagem |>
+  mutate(wd = data_hora |> wday(label = TRUE)) |>
   ggplot(aes(x = wd)) +
   geom_bar(fill = "blue") +
   theme_minimal(14) +
@@ -242,29 +243,37 @@ df |>
 
 # dá pra criar funções anônimas assim ;)
 # esse é um limpador bem safado que fiz em 1 min
-limpar <- . |>
-  abjutils::rm_accent() |>
-  stringr::str_to_title() |>
-  stringr::str_remove_all("[^a-zA-Z0-9 ]") |>
-  stringr::str_remove_all("Pra") |>
-  stringr::str_squish()
-library('abjutils')
-# tirar palavras que nao quero
-banned <- tidytext::get_stopwords("pt") |>
-  dplyr::mutate(palavra = limpar(word))
+limpar <- 
+  \(x) 
+  abjutils::rm_accent(x) |>
+  str_to_title() |>
+  str_remove_all("[^a-zA-Z0-9 ]") |>
+  str_remove_all("Pra") |>
+  str_squish()
+
+# wordcloud ---- 
+# library('abjutils')
+# tirar palavras que nao quero 
+banned <- 
+  tidytext::get_stopwords("pt") |>
+  mutate(palavra = limpar(word))
 
 cores <- viridis::viridis(10, begin = 0, end = 0.8)
 
-df |>
+raspagem$postagem |>
   tidytext::unnest_tokens(palavra, texto) |>
-  dplyr::mutate(palavra = limpar(palavra)) |>
-  dplyr::anti_join(banned, "palavra") |>
-  dplyr::count(palavra, sort = TRUE) |>
-  with(wordcloud::wordcloud(
-    palavra, n, scale = c(5, .1),
-    min.freq = 80, random.order = FALSE,
-    colors = cores
-  ))
+  mutate(palavra = limpar(palavra)) |>
+  anti_join(banned, "palavra") |>
+  count(palavra, sort = TRUE) |>
+  with(
+    wordcloud::wordcloud(
+      palavra, 
+      n, 
+      scale = c(5, .1),
+      min.freq = 80, random.order = FALSE,
+      colors = cores
+    )
+  )
 
 ```
 
