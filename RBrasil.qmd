@@ -1,6 +1,6 @@
 ---
 title: "A Comunidade `R Brasil` no Telegram"
-|> authors:
+authors:
   - first_name: Marcelo Ventura
     last_name: Freire
     email: mvf@usp.br
