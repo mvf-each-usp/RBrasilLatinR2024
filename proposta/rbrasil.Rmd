@@ -59,18 +59,17 @@ Pretendemos realizar uma apresentação que seguirá estas linhas:
 - O *Grupo* R Brasil
     - breve histórico
     <!-- - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017 -->
-    - números rápidos
-    <!-- - números rápidos em 25/08/2024 -->
-        <!-- - 170190 mensagens postadas -->
-        <!-- - 13810 links compartilhados -->
-        <!-- - 7274 fotos -->
-        <!-- - 2758 dias de existência e crescendo -->
-        <!-- - 2266 membros atuais -->
-        <!-- - 697 arquivos -->
-        <!-- - 78 videos -->
-        <!-- - 65 mensagens de voz -->
-        <!-- - 13 admins -->
-        <!-- - 1 servidor no discord de backup para "emergências"  ;) -->
+    - números rápidos até 25/08/2024
+        - 170.190 mensagens postadas
+        - 13.810 links compartilhados
+        - 7.274 fotos
+        - 2.758 dias de existência e contando
+        - 2.266 membros atuais
+        - 697 arquivos
+        - 78 videos
+        - 65 mensagens de voz
+        - 13 admins
+        - 1 servidor no discord de backup para emergências
     - evolução do grupo ao longo do tempo
         <!-- - número de membros -->
         <!-- - número de mensagens -->
