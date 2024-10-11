@@ -418,6 +418,12 @@ Sim:
 
 
 
+# Agradecimentos
+
+- Ao Marcus ??? AQUI!!!!!! (`@marcusvv`), membro do `R Brasil` que postou a imagem do slide de título e sugeriu seu uso nesta apresentação
+- Ao parecerista anônimo que sugeriu melhorias nesta apresentação
+- A todos os membros da R Brasil
+
 
 
 
