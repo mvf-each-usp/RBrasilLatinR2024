@@ -147,7 +147,7 @@ sapply(raspagem, nrow)
 ```{r}
 #| label: graficos
 
-# Summarize the data and filter for top 15 users
+# Summarize the data and filter for top 15 users ----
 plot1 <- 
   raspagem$postagem |> 
   # filter(autor != "Deleted Account") |> 
@@ -182,7 +182,7 @@ plotly_plot1 <- ggplotly(plot1)
 plotly_plot1
 
 
-## Total de mensagens ao longo do tempo
+# Total de mensagens ao longo do tempo ----
 
 plot2 <- 
   raspagem$postagem |> 
@@ -218,7 +218,7 @@ df |>
   ggtitle("Frequência de mensagens por usário no R-Brasil")+
   theme_bw()
 
-## hora que mais interagimos
+# hora que mais interagimos ----
 
 df |>
   dplyr::mutate(hora = factor(lubridate::hour(data_hora))) |>
@@ -229,7 +229,7 @@ df |>
   ggtitle("Hora das mensagens no Telegram do R-Brasil")
 
 
-## o dia da semana
+# o dia da semana ----
 
 df |>
   dplyr::mutate(wd = lubridate::wday(data_hora, label = TRUE)) |>
