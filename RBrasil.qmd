@@ -420,13 +420,13 @@ Sim:
 
 # Agradecimentos
 
-- Ao Marcus ??? AQUI!!!!!! (`@marcusvv`), membro do `R Brasil` que postou a imagem do slide de título e sugeriu seu uso nesta apresentação
-- Ao parecerista anônimo que sugeriu melhorias nesta apresentação
-- Aos admins do grupo pelo trabalho de bastidores cotidiano e pelas sugestões para está apresentação
-- A todos os membros da R Brasil 
+- Ao `@marcusvv`, membro do `R Brasil` que originalmente postou no grupo a imagem (gerada pelo [ideograma.ai](https://ideograma.ai)) usada agora no slide de título e que sugeriu seu uso nesta apresentação
+- Ao parecerista anônimo que sugeriu as melhorias para esta apresentação
+- Aos admins do grupo pelo trabalho de bastidores cotidiano e pelas sugestões para esta apresentação
+- A todos os membros da R Brasil
 
 
-
+# AQUI!!!!!!!!!!!!  OS SLIDES DA APRESENTAÇÃO ACABARAM AQUI
 
 # AQUI!!!!!!!   -->  Reciclar
 
