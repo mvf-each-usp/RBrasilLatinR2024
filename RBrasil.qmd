@@ -68,10 +68,10 @@ library(plotly)
 # Sequência de slides a implementar
 
 - R Brasil no Telegram
-    - É *O* R Brasil ou é *A* R Brasil?
-        - o *grupo* R Brasil do Telegram
-        - a *comunidade* R Brasil de membros do grupo R Brasil
-- O *Grupo* R Brasil
+    - É *O* `R Brasil` ou é *A* R Brasil?
+        - o *grupo* `R Brasil` do `telegram`
+        - a *comunidade* R Brasil de membros do *grupo* R Brasil
+- O *Grupo* `R Brasil`
     - breve histórico
         - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017
     - números rápidos em 25/08/2024   <---- atualizar!
@@ -183,111 +183,225 @@ AQUI COMEÇAM OS SLIDES DE VERDADE
 # R Brasil no Telegram
 
 ## É *O* R Brasil ou é *A* R Brasil?
-        - o *grupo* R Brasil do Telegram
-        - a *comunidade* R Brasil de membros do grupo R Brasil
 
-# O *Grupo* R Brasil
+- O *grupo* `R Brasil` do `telegram`
+- A *comunidade* R Brasil de membros do *grupo* `R Brasil`
+
+# O *Grupo* `R Brasil`
 
 ## Breve Histórico
-        - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017
+
+- Grupo criado no `telegram` por Felipe Barros em 5 de fevereiro de 2017
+
+
+
 ## Números Rápidos 
 
-Em 25/08/2024
-        - 170190 mensagens postadas
-        - 13810 links compartilhados
-        - 7274 fotos
-        - 2758 dias de existência e crescendo
-        - 2266 membros atuais
-        - 697 arquivos
-        - 78 videos
-        - 65 mensagens de voz
-        - 13 admins
-        - 1 servidor no discord de backup para "emergências"  ;)
+Em 25/08/2024,
 
-## evolução do grupo ao longo do tempo
-        - número de membros
-        - número de mensagens
-## objetivos do grupo
-        - compartilhar conhecimento
-        - tirar dúvidas
-        - colocar pessoas em contato
-        - abrir portas
+- 170190 mensagens postadas
+- 13810 links compartilhados
+- 7274 fotos
+- 2758 dias de existência e crescendo
+- 2266 membros atuais
+- 697 arquivos
+- 78 videos
+- 65 mensagens de voz
+- 13 admins
+- 1 servidor no discord de backup para emergências
+
+
+
+## Evolução do Grupo ao Longo do Tempo
+
+- número de membros
+- número de mensagens
+
+
+
+## Objetivos do Grupo
+
+- compartilhar conhecimento
+- tirar dúvidas
+- colocar pessoas em contato
+- abrir portas
+
 
 
 # A *Comunidade* R Brasil
-## diversidade de formações 
-        - biólogos, ecologistas
-        - computeiros, estatísticos, matemáticos
-        - advogados, jurimestristas
-        - geógrafos, geólogos, gestores ambientais
-        - médicos, psicólogos, psicometristas
-        - mercadólogos, administradores, economistas
-        - engenheiros
-        - jornalistas
-        - entre outras
-## diversidade de atuações 
-        - profissionais e estudantes
-        - setor público, setor privado e terceiro setor
-        - profissionais e pesquisadores acadêmicos
-        - freelancers, empregados e empreendedores
-## diversidade de interesses
-        - interesses específicos: programação em R
-            - apresentações de dúvidas e dificuldades com código
-            - pedidos de colaboração em código e repositórios
-            - sugestões, brainstormings e "solution racings"
-        - interesses circundantes: o que afeta e é afetado pelo uso do R
-            - modelagem e análise de dados
-            - métodos estatísticos, técnicas de machine learning etc.
-            - manuseio de dados
-            - tecnologias para big data
-            - visualização de dados e dashboard
-            - raspagem e mineiração de dados
-            - desenvolvimento de pacotes
-            - ciência de dados e soluções integrativas
-            - comparativos de aspectos com outras linguagens
-            - interações do R com sistemas operacionais
-            - portabilidade de dados entre plataformas e na internet
-        - interesses em aplicações específicas: onde o R pode ser usado
-            - jurimetria
-            - dados ambientais
-            - dados georreferenciados
-            - dados abertos e transparência pública
-            - jornalismo de dados
-            - negócios
-            - entre outros
-        - divulgação: onde, quando e como o R pode te alavancar
-            - vagas e oportunidades
-            - cursos sobre R e afins
-## diversidade de localização
-        - membros originários do Brasil inteiro
-        - também há vários portugueses na R Brasil
-        - há vários membros localizados fora do Brasil
-# Resultados das interações entre os membros da R Brasil
-## alguns grupos surgidos da R Brasil 
-        - Web-scraping Brasil (<https://t.me/+Z4d0O-ZQXsQyNDJk>)
-        - Bio-R
-        - Shiny Brasil (<https://t.me/shinybrasi>)
-## iniciativas que surgiram de membros que se conheceram na R Brasil
-        - Dadoscope
-            - <https://github.com/dadoscope>
-            - <https://revistaforum.com.br/opiniao/2019/7/10/dadoscope-novo-blog-na-forum-traz-jornalismo-de-dados-58299.html>
-        - diversas colaborações em freelance
-        - várias colaborações acadêmica
-        - algumas startups
-        - entre outras
-# Lições aprendidas ao longo dos anos
-    1. o aprendizado da linguagem está diretamente conectado com a relação afetiva que você vai estabelecer com a comunidade dessa linguagem, e não somente com a linguagem em si e suas características, méritos e deméritos
-        - o aprendizado da linguagem é apenas um aspecto de um aprendizado maior, que é o aprendizado da cultura da linguagem, da cultura da análise de dados e das tecnologias nela envolvidas, da cultura do debate 
-        - quem já está imerso nessa cultura já a incorporou, mas a pessoa que está começando a entrar nessa cultura através do aprendizado de uma linguagem (como o R) não sabe exatamente o que pode falar num grupo novo, o que é complexo e o que é simples na linguagem e na cultura subjacente
-        - nesse sentido, nossa comunidade é acolhedora, pois deixamos as pessoas falarem, discutimos e, quando é o caso, quem tem mais experiência propões orientação para quem apresenta suas dúvidas
-    2. a importância de ter uma comunidade para o aprendizado da linguagem
-        - essas comunidades não desempenham o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT, 
-    3. a necessidade e importância de estabelecer parâmetros relacionais e limites para cuidar dessa comunidade e manter uma ordem que permita ela funcionar sem sufocar nem a dinâmica do convívio e nem as troca de experiências e de informações entre seus membros
-        - políticas estritas de respeito e convívio
-        - nesse sentido, uma lição importante foi a escolha pela liberalidade nas discussões no grupo, que seria brutalmente diminuída se o corpo de admins utilizasse políticas estritas de off-topic
-        - na R Brasil, as discussões frequentemente realizam longas incursões para fora do R com tranquilidade e naturalidade, a ponto de um membro da comunidade precisar fazer muita força para receber uma carimbada de off-topic por parte dos admins
 
-# Para entrar no grupo
+Um grupo heterogêneo
+
+- Diversidade de Formações 
+- Diversidade de Atuações 
+- Diversidade de Interesses
+    - Interesses específicos
+    - Interesses circundantes
+    - Interesses em aplicações específicas
+    - Divulgação
+- Diversidade de Localização
+
+
+
+## Diversidade de Formações 
+
+Temos no grupo
+
+- biólogos, ecologistas
+- computeiros, estatísticos, matemáticos
+- advogados, jurimestristas
+- geógrafos, geólogos, gestores ambientais
+- médicos, psicólogos, psicometristas
+- mercadólogos, administradores, economistas
+- engenheiros
+- jornalistas
+- entre outras
+
+
+
+## Diversidade de Atuações 
+
+Temos no grupo
+
+- profissionais e estudantes
+- setor público, setor privado e terceiro setor
+- profissionais e pesquisadores acadêmicos
+- freelancers, empregados e empreendedores
+
+
+
+## Diversidade de Interesses
+
+Temos no grupo
+
+- Interesses específicos: programação em R
+- Interesses circundantes: o que afeta e é afetado pelo uso do R
+- Interesses em aplicações específicas: onde o R tem sido usado pelos membros do grupo
+- Divulgação: onde, quando e como o R tem alavancado seus usuários
+
+
+
+### Interesses Específicos
+
+Programação em R
+
+- Apresentações de dúvidas e dificuldades com código
+- Pedidos de colaboração em código e repositórios
+- Sugestões, brainstormings e *solution racings*
+
+
+
+### Interesses Circundantes
+
+O que afeta e é afetado pelo uso do R
+
+- Modelagem e análise de dados
+- Métodos estatísticos, técnicas de machine learning etc.
+- Manuseio de dados
+- Tecnologias para big data
+- Visualização de dados e dashboard
+- Raspagem e mineiração de dados
+- Desenvolvimento de pacotes
+- Ciência de dados e soluções integrativas
+- Comparativos de aspectos com outras linguagens
+- Interações do R com sistemas operacionais
+- Portabilidade de dados entre plataformas e na internet
+
+
+
+### Interesses em Aplicações Específicas
+
+Onde o R tem sido usado pelos membros do grupo
+
+- jurimetria
+- dados ambientais
+- dados georreferenciados
+- dados abertos e transparência pública
+- jornalismo de dados
+- negócios
+- entre outros
+
+
+
+### Divulgação
+
+Onde, quando e como o R tem alavancado seus usuários
+
+- vagas e oportunidades
+- cursos sobre R e afins
+
+
+
+## Diversidade de Localização
+
+- Membros originários do Brasil inteiro
+- Também há vários portugueses na R Brasil
+- Há vários membros localizados fora do Brasil
+- O uso do Português é obrigatório no grupo?
+    - Não há regras a esse respeito, mas mensagens em outras línguas podem ter menor resposta em função do menor número de leitores
+
+
+
+# Resultados das Interações entre os Membros da R Brasil
+
+## Alguns grupos surgidos do R Brasil 
+
+Da interação entre os membros do grupo, surgiram pelo menos três novos grupos do `telegram`
+
+- Web-scraping Brasil (<https://t.me/+Z4d0O-ZQXsQyNDJk>)
+- Bio-R
+- Shiny Brasil (<https://t.me/shinybrasi>)
+
+
+
+## Iniciativas que Surgiram de Membros que se Conheceram no R Brasil
+
+Também surgiram da interação dos membros do grupo
+
+- Dadoscope
+    - <https://github.com/dadoscope>
+    - <https://revistaforum.com.br/opiniao/2019/7/10/dadoscope-novo-blog-na-forum-traz-jornalismo-de-dados-58299.html>
+- diversas colaborações em freelance
+- várias colaborações acadêmica
+- algumas startups
+- entre outras
+
+
+
+# Lições Aprendidas ao Longo dos Anos
+
+- O aprendizado da linguagem está diretamente conectado com a relação afetiva com a comunidade
+- A importância de ter uma comunidade para o aprendizado da linguagem
+- A necessidade de parâmetros relacionais e limites
+
+
+## O aprendizado da linguagem está diretamente conectado com a relação afetiva com a comunidade
+
+O aprendizado da linguagem está diretamente conectado com a relação afetiva que você vai estabelecer com a comunidade dessa linguagem, e não somente com a linguagem em si e suas características, méritos e deméritos
+
+- O aprendizado da linguagem é apenas um aspecto de um aprendizado maior, que é o aprendizado da cultura da linguagem, da cultura da análise de dados e das tecnologias nela envolvidas, da cultura do debate 
+- Quem já está imerso nessa cultura já a incorporou, mas a pessoa que está começando a entrar nessa cultura através do aprendizado de uma linguagem (como o R) não sabe exatamente o que pode falar num grupo novo, o que é complexo e o que é simples na linguagem e na cultura subjacente
+- Nesse sentido, nossa comunidade é acolhedora, pois deixamos as pessoas falarem, discutimos e, quando é o caso, quem tem mais experiência propões orientação para quem apresenta suas dúvidas
+
+
+
+## A importância de Ter uma Comunidade para o Aprendizado da Linguagem
+
+- essas comunidades não desempenham o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT, 
+
+
+
+## A Necessidade de Parâmetros Relacionais e Limites
+
+A necessidade e importância de estabelecer parâmetros relacionais e limites para cuidar dessa comunidade e manter uma ordem que permita ela funcionar sem sufocar nem a dinâmica do convívio e nem as troca de experiências e de informações entre seus membros
+
+- políticas estritas de respeito e convívio
+- nesse sentido, uma lição importante foi a escolha pela liberalidade nas discussões no grupo, que seria brutalmente diminuída se o corpo de admins utilizasse políticas estritas de off-topic
+- na R Brasil, as discussões frequentemente realizam longas incursões para fora do R com tranquilidade e naturalidade, a ponto de um membro da comunidade precisar fazer muita força para receber uma carimbada de off-topic por parte dos admins
+
+
+
+# Para Entrar no Grupo
 
 ## É só entrar?
 
@@ -296,7 +410,9 @@ Sim:
 - grupo aberto, então o acesso é livre
 - só tem que pelo captcha da Rose, o nosso bot anti-bots
 
-## Onde então?
+
+
+## Onde Então?
 
 <https://t.me/rbrasiloficial>
 
