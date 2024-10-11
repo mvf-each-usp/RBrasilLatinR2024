@@ -109,6 +109,18 @@ library(plotly)
         - várias colaborações acadêmica
         - algumas startups
         - entre outras
+- Lições aprendidas ao longo dos anos
+    1. o aprendizado da linguagem está diretamente conectado com a relação afetiva que você vai estabelecer com a comunidade dessa linguagem, e não somente com a linguagem em si e suas características, méritos e deméritos
+        - o aprendizado da linguagem é apenas um aspecto de um aprendizado maior, que é o aprendizado da cultura da linguagem, da cultura da análise de dados e das tecnologias nela envolvidas, da cultura do debate 
+        - quem já está imerso nessa cultura já a incorporou, mas a pessoa que está começando a entrar nessa cultura através do aprendizado de uma linguagem (como o R) não sabe exatamente o que pode falar num grupo novo, o que é complexo e o que é simples na linguagem e na cultura subjacente
+        - nesse sentido, nossa comunidade é acolhedora, pois deixamos as pessoas falarem, discutimos e, quando é o caso, quem tem mais experiência propões orientação para quem apresenta suas dúvidas
+    2. a importância de ter uma comunidade para o aprendizado da linguagem
+        - essas comunidades não desempenham o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT, 
+    3. a necessidade e importância de estabelecer parâmetros relacionais e limites para cuidar dessa comunidade e manter uma ordem que permita ela funcionar sem sufocar nem a dinâmica do convívio e nem as troca de experiências e de informações entre seus membros
+        - políticas estritas de respeito e convívio
+        - nesse sentido, uma lição importante foi a escolha pela liberalidade nas discussões no grupo, que seria brutalmente diminuída se o corpo de admins utilizasse políticas estritas de off-topic
+        - na R Brasil, as discussões frequentemente realizam longas incursões para fora do R com tranquilidade e naturalidade, a ponto de um membro da comunidade precisar fazer muita força para receber uma carimbada de off-topic por parte dos admins
+
 - Para entrar no grupo
     - grupo aberto, então o acesso é livre
     - captcha
