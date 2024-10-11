@@ -1,11 +1,53 @@
 ---
 title: "A Comunidade `R Brasil` no Telegram"
-author:
-  - Marcelo Ventura Freire
-  - Leonardo Fernandes Nascimento
+|> authors:
+  - first_name: Marcelo Ventura
+    last_name: Freire
+    email: mvf@usp.br
+    country: br
+    affiliation: "Escola de Artes, Ciências e Humanidades (EACHUSP)"
+    url: ["https://t.me/rbrasiloficial", "https://github.com/mvf-each-usp"]
+    corresponding: true
+  - first_name: Leonardo Fernandes 
+    last_name: Nascimento
+    email: leofn3@gmail.com
+    country: br
+    affiliation: "Laboratório de Humanidades Digitais da UFBA (LABHDUFBA)"
+    url: "https://github.com/leofn"
+    corresponding: false
 format: 
-  html:
+  revealjs:
+    embed-resources: true
     toc: true
+    # slideNumber: c/t
+    code-fold: false
+    center: true
+    theme: white
+    transition: slide
+    slideNumber: true
+    width: 1920
+    height: 1080
+    progress: true
+    history: true
+execute: 
+  cache: true
+  echo: false
+  error: false
+  warning: false
+  message: false
+  fig.width: 6
+  fig.height: 4
+  fig.retina: 2
+  dev: png
+  out.width: '100%'
+  out.height: '100%'
+  fig.align: 'center'
+  fig.cap: 'center'
+  fig.pos: 'H'
+  fig.subcap: 'center'
+  fig.asp: 1
+  dpi: 96
+  fig.show: 'hold'
 ---
 
 ```{r}
@@ -20,7 +62,7 @@ library(plotly)
 # library(viridis)
 ```
 
-## Sequência de slides a implementar
+# Sequência de slides a implementar
 
 - R Brasil no Telegram
     - É *O* R Brasil ou é *A* R Brasil?
@@ -128,6 +170,140 @@ library(plotly)
 
 
 
+
+#  AQUI!!!!!!!!!!!!!!!!!  
+
+
+AQUI COMEÇAM OS SLIDES DE VERDADE
+
+
+# R Brasil no Telegram
+
+## É *O* R Brasil ou é *A* R Brasil?
+        - o *grupo* R Brasil do Telegram
+        - a *comunidade* R Brasil de membros do grupo R Brasil
+
+# O *Grupo* R Brasil
+
+## Breve Histórico
+        - grupo criado no Telegram por Felipe Barros em 5 de fevereiro de 2017
+## Números Rápidos 
+
+Em 25/08/2024
+        - 170190 mensagens postadas
+        - 13810 links compartilhados
+        - 7274 fotos
+        - 2758 dias de existência e crescendo
+        - 2266 membros atuais
+        - 697 arquivos
+        - 78 videos
+        - 65 mensagens de voz
+        - 13 admins
+        - 1 servidor no discord de backup para "emergências"  ;)
+
+## evolução do grupo ao longo do tempo
+        - número de membros
+        - número de mensagens
+## objetivos do grupo
+        - compartilhar conhecimento
+        - tirar dúvidas
+        - colocar pessoas em contato
+        - abrir portas
+
+
+# A *Comunidade* R Brasil
+## diversidade de formações 
+        - biólogos, ecologistas
+        - computeiros, estatísticos, matemáticos
+        - advogados, jurimestristas
+        - geógrafos, geólogos, gestores ambientais
+        - médicos, psicólogos, psicometristas
+        - mercadólogos, administradores, economistas
+        - engenheiros
+        - jornalistas
+        - entre outras
+## diversidade de atuações 
+        - profissionais e estudantes
+        - setor público, setor privado e terceiro setor
+        - profissionais e pesquisadores acadêmicos
+        - freelancers, empregados e empreendedores
+## diversidade de interesses
+        - interesses específicos: programação em R
+            - apresentações de dúvidas e dificuldades com código
+            - pedidos de colaboração em código e repositórios
+            - sugestões, brainstormings e "solution racings"
+        - interesses circundantes: o que afeta e é afetado pelo uso do R
+            - modelagem e análise de dados
+            - métodos estatísticos, técnicas de machine learning etc.
+            - manuseio de dados
+            - tecnologias para big data
+            - visualização de dados e dashboard
+            - raspagem e mineiração de dados
+            - desenvolvimento de pacotes
+            - ciência de dados e soluções integrativas
+            - comparativos de aspectos com outras linguagens
+            - interações do R com sistemas operacionais
+            - portabilidade de dados entre plataformas e na internet
+        - interesses em aplicações específicas: onde o R pode ser usado
+            - jurimetria
+            - dados ambientais
+            - dados georreferenciados
+            - dados abertos e transparência pública
+            - jornalismo de dados
+            - negócios
+            - entre outros
+        - divulgação: onde, quando e como o R pode te alavancar
+            - vagas e oportunidades
+            - cursos sobre R e afins
+## diversidade de localização
+        - membros originários do Brasil inteiro
+        - também há vários portugueses na R Brasil
+        - há vários membros localizados fora do Brasil
+# Resultados das interações entre os membros da R Brasil
+## alguns grupos surgidos da R Brasil 
+        - Web-scraping Brasil (<https://t.me/+Z4d0O-ZQXsQyNDJk>)
+        - Bio-R
+        - Shiny Brasil (<https://t.me/shinybrasi>)
+## iniciativas que surgiram de membros que se conheceram na R Brasil
+        - Dadoscope
+            - <https://github.com/dadoscope>
+            - <https://revistaforum.com.br/opiniao/2019/7/10/dadoscope-novo-blog-na-forum-traz-jornalismo-de-dados-58299.html>
+        - diversas colaborações em freelance
+        - várias colaborações acadêmica
+        - algumas startups
+        - entre outras
+# Lições aprendidas ao longo dos anos
+    1. o aprendizado da linguagem está diretamente conectado com a relação afetiva que você vai estabelecer com a comunidade dessa linguagem, e não somente com a linguagem em si e suas características, méritos e deméritos
+        - o aprendizado da linguagem é apenas um aspecto de um aprendizado maior, que é o aprendizado da cultura da linguagem, da cultura da análise de dados e das tecnologias nela envolvidas, da cultura do debate 
+        - quem já está imerso nessa cultura já a incorporou, mas a pessoa que está começando a entrar nessa cultura através do aprendizado de uma linguagem (como o R) não sabe exatamente o que pode falar num grupo novo, o que é complexo e o que é simples na linguagem e na cultura subjacente
+        - nesse sentido, nossa comunidade é acolhedora, pois deixamos as pessoas falarem, discutimos e, quando é o caso, quem tem mais experiência propões orientação para quem apresenta suas dúvidas
+    2. a importância de ter uma comunidade para o aprendizado da linguagem
+        - essas comunidades não desempenham o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT, 
+    3. a necessidade e importância de estabelecer parâmetros relacionais e limites para cuidar dessa comunidade e manter uma ordem que permita ela funcionar sem sufocar nem a dinâmica do convívio e nem as troca de experiências e de informações entre seus membros
+        - políticas estritas de respeito e convívio
+        - nesse sentido, uma lição importante foi a escolha pela liberalidade nas discussões no grupo, que seria brutalmente diminuída se o corpo de admins utilizasse políticas estritas de off-topic
+        - na R Brasil, as discussões frequentemente realizam longas incursões para fora do R com tranquilidade e naturalidade, a ponto de um membro da comunidade precisar fazer muita força para receber uma carimbada de off-topic por parte dos admins
+
+# Para entrar no grupo
+
+## É só entrar?
+
+Sim:
+
+- grupo aberto, então o acesso é livre
+- só tem que pelo captcha da Rose, o nosso bot anti-bots
+
+## Onde então?
+
+<https://t.me/rbrasiloficial>
+
+
+
+
+
+
+# AQUI!!!!!!!   -->  Reciclar
+
 ## Exploração Preliminar da Raspagem da Troca de Mensagens do Grupo
 
 
@@ -145,9 +321,8 @@ sapply(raspagem, nrow)
 
 
 ```{r}
-#| label: graficos
+#| label: graficos-top-15-users
 
-# Summarize the data and filter for top 15 users ----
 plot1 <- 
   raspagem$postagem |> 
   # filter(autor != "Deleted Account") |> 
@@ -180,9 +355,11 @@ plot1 <-
 plotly_plot1 <- ggplotly(plot1)
 # Display the Plotly plot
 plotly_plot1
+```
 
 
-# Total de mensagens ao longo do tempo ----
+```{r}
+#| label: graficos-total-mensagens
 
 plot2 <- 
   raspagem$postagem |> 
@@ -201,8 +378,12 @@ plotly_plot2 <- ggplotly(plot2)
 
 # Display the Plotly plot
 plotly_plot2
+```
 
-# total de mensagens por user ao longo do tempo ----
+
+```{r}
+#| label: graficos-total-mensagens-user
+
 raspagem$postagem |>
   filter(autor != "Deleted Account") |>
   mutate(
@@ -218,8 +399,11 @@ raspagem$postagem |>
   labs(x = "Mês", y = "Quantidade de mensagens") +
   ggtitle("Frequência de mensagens por usário no R-Brasil")+
   theme_bw()
+```
 
-# hora que mais interagimos ----
+
+```{r}
+#| label: graficos-hora-interagimos
 
 raspagem$postagem |>
   mutate(hora = data_hora |> hour() |> factor()) |>
@@ -228,9 +412,11 @@ raspagem$postagem |>
   theme_minimal(14) +
   ylab("Número de Mensagens")+
   ggtitle("Hora das mensagens no Telegram do R-Brasil")
+```
 
 
-# o dia da semana ----
+```{r}
+#| label: graficos-dia-semana
 
 raspagem$postagem |>
   mutate(wd = data_hora |> wday(label = TRUE)) |>
@@ -239,7 +425,11 @@ raspagem$postagem |>
   theme_minimal(14) +
   ylab("Dia da semana")+
   ggtitle("Dia da semana das mensagens")
+```
 
+
+```{r}
+#| label: prepara-graficos-wordcloud
 
 # dá pra criar funções anônimas assim ;)
 # esse é um limpador bem safado que fiz em 1 min
@@ -252,13 +442,17 @@ limpar <-
   str_squish()
 
 # wordcloud ---- 
-# library('abjutils')
 # tirar palavras que nao quero 
 banned <- 
   tidytext::get_stopwords("pt") |>
   mutate(palavra = limpar(word))
 
 cores <- viridis::viridis(10, begin = 0, end = 0.8)
+```
+
+
+```{r}
+#| label: graficos-wordcloud
 
 raspagem$postagem |>
   tidytext::unnest_tokens(palavra, texto) |>
@@ -274,13 +468,12 @@ raspagem$postagem |>
       colors = cores
     )
   )
-
 ```
 
 
 
 
-## TO-DO LIST
+# AQUI !!!!!!!!!!!  TO-DO LIST
 
 - fazer um histórico breve do grupo
     - ver se dá para levantar dados históricos da evolução do grupo, como 
