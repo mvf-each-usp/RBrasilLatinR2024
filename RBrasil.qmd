@@ -63,7 +63,7 @@ library(plotly)
         - profissionais e estudantes
         - setor público, setor privado e terceiro setor
         - profissionais e pesquisadores acadêmicos
-        - freelancers e funcionários
+        - freelancers, empregados e empreendedores
     - diversidade de interesses
         - interesses específicos: programação em R
             - apresentações de dúvidas e dificuldades com código
