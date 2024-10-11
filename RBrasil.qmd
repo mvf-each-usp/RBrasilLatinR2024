@@ -20,6 +20,8 @@ format:
   revealjs:
     embed-resources: true
     toc: true
+    toc_levels: 2
+    number_sections: true
     # slideNumber: c/t
     code-fold: false
     center: true
