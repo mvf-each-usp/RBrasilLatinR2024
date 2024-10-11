@@ -1,5 +1,6 @@
 ---
-title: "A Comunidade `R Brasil` no Telegram"
+title: "A Comunidade \ `R Brasil` no Telegram "
+subtitle: "![catioRinho -- imagem postada por ](img/catioRo.jpg){width=30%} ~2~"
 authors:
   - first_name: Marcelo Ventura
     last_name: Freire
