@@ -411,24 +411,6 @@ O aprendizado da linguagem está diretamente conectado com a relação afetiva q
 
 
 
-# AQUI!!!!!!!!!!!!  OS SLIDES DA APRESENTAÇÃO ACABARAM AQUI
-
-# AQUI!!!!!!!   -->  Reciclar
-
-## Exploração Preliminar da Raspagem da Troca de Mensagens do Grupo
-
-
-```{r}
-#| label: monta-tabelas
-
-# carrega a raspagem ----
-raspagem <- 
-  readRDS("./data/raspagem.rds") |> 
-  group_split(tipo) 
-## e já separa em três grupos pelo tipo: entrada, postagem e service
-names(raspagem) <- map_chr(raspagem, \(tab) tab$tipo[1])
-sapply(raspagem, nrow)
-```
 - A comunidade é um espaço de aprendizado
     - Nossa comunidade não desempenha o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT ou Copilot
     - O grupo aqui é bem mais acessível e receptivo em comparação
@@ -436,118 +418,16 @@ sapply(raspagem, nrow)
     - O objetivo é manter a bola no ar o maior tempo possível
 
 
-```{r}
-#| label: graficos-top-15-users
-
-plot1 <- 
-  raspagem$postagem |> 
-  # filter(autor != "Deleted Account") |> 
-  group_by(autor) |>
-  summarize(n = n()) |>
-  ungroup() |>
-  top_n(15, n) |>
-  mutate(autor = reorder(autor, -n)) |> 
-  ggplot() +
-  aes(x = autor, y = n, fill = factor(autor)) +
-  geom_bar(stat = "identity", color = 'black', size = 0.2) + # Black border for contrast
-  xlab("") +  # Custom label
-  ylab("") +
-  ggtitle("Top 15 Usuários do Telegram R-Brasil por Total de Mensagens") +
-  coord_flip() +
-  scale_fill_viridis_d(option = "viridis") +  # Apply the viridis color palette
-  theme_void(base_size = 15) +  # Clean theme with increased base font size
-  theme(
-    plot.title = element_text(hjust = 0.5, face = "bold", size = 18),  # Center and bold title
-    axis.title.x = element_text(face = "bold", size = 14),  # Bold X axis label
-    axis.title.y = element_text(face = "bold", size = 14),  # Bold Y axis label
-    axis.text.x = element_text(size = 12),  # Size of X axis text
-    axis.text.y = element_text(size = 12),  # Size of Y axis text
-    panel.grid.major.y = element_blank(),  # Remove major gridlines on Y axis
-    panel.grid.minor.y = element_blank(),  # Remove minor gridlines on Y axis
-    panel.grid.major.x = element_line(color = "gray", linewidth = 0.5),  # Light gridlines on X axis
-    legend.position = "none"  # Hide legend to focus on bar colors
-  )
-# Convert the ggplot to a Plotly plot
-plotly_plot1 <- ggplotly(plot1)
-# Display the Plotly plot
-plotly_plot1
-```
 
 
-```{r}
-#| label: graficos-total-mensagens
-
-plot2 <- 
-  raspagem$postagem |> 
-  mutate(mes = data_hora |> floor_date("month")) |>
-  count(mes) |>
-  ggplot(aes(x = mes, y = n)) +
-  geom_line(color = "darkblue", size = 1) +  # Line color and thickness
-  geom_point(color = "darkred", size = 3) +  # Point color and size
-  xlab("") +
-  ylab("") +
-  ggtitle("Total de mensagens no Telegram do R-Brasil") +
-  theme_gray(base_size = 16)  # Apply the gray theme with a base font size
-
-# Convert the ggplot to a Plotly plot
-plotly_plot2 <- ggplotly(plot2)
-
-# Display the Plotly plot
-plotly_plot2
-```
 
 
-```{r}
-#| label: graficos-total-mensagens-user
 
-raspagem$postagem |>
-  filter(autor != "Deleted Account") |>
-  mutate(
-    autor = autor |> fct_lump(12) |> as.character(),
-    mes = data_hora |> floor_date("month")
-  ) |>
-  filter(autor != "Other") |>
-  count(mes, autor, sort = TRUE) |>
-  complete(mes, autor, fill = list(n = 0)) |>
-  ggplot(aes(x = mes, y = n)) +
-  geom_line() +
-  facet_wrap(~autor) +
-  labs(x = "Mês", y = "Quantidade de mensagens") +
-  ggtitle("Frequência de mensagens por usário no R-Brasil")+
-  theme_bw()
-```
-
-
-```{r}
-#| label: graficos-hora-interagimos
-
-raspagem$postagem |>
-  mutate(hora = data_hora |> hour() |> factor()) |>
-  ggplot(aes(x = hora)) +
-  geom_bar(fill = "royalblue") +
-  theme_minimal(14) +
-  ylab("Número de Mensagens")+
-  ggtitle("Hora das mensagens no Telegram do R-Brasil")
-```
-
-
-```{r}
-#| label: graficos-dia-semana
-
-raspagem$postagem |>
-  mutate(wd = data_hora |> wday(label = TRUE)) |>
-  ggplot(aes(x = wd)) +
-  geom_bar(fill = "blue") +
-  theme_minimal(14) +
-  ylab("Dia da semana")+
-  ggtitle("Dia da semana das mensagens")
-```
 
 
 ```{r}
 #| label: prepara-graficos-wordcloud
 
-# dá pra criar funções anônimas assim ;)
 # esse é um limpador bem safado que fiz em 1 min
 limpar <- 
   \(x) 
