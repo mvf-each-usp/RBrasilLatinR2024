@@ -1,18 +1,14 @@
 ---
-title: "A Comunidade \ `R Brasil` no Telegram "
-subtitle: "![catioRinho -- imagem postada por ](img/catioRo.jpg){width=30%} ~2~"
+title: "A Comunidade R Brasil no Telegram "
+subtitle: "![catioRinho -- imagem postada por ](img/catioRo.jpg){width=30%}"
 authors:
-  - first_name: Marcelo Ventura
-    last_name: Freire
+  - name: Marcelo Ventura Freire
     email: mvf@usp.br
-    country: br
-    affiliation: "Escola de Artes, Ciências e Humanidades (EACHUSP)"
+    affiliation: "Escola de Artes, Ciências e Humanidades da USP (EACHUSP)"
     url: ["https://t.me/rbrasiloficial", "https://github.com/mvf-each-usp"]
     corresponding: true
-  - first_name: Leonardo Fernandes 
-    last_name: Nascimento
+  - name: Leonardo Fernandes Nascimento
     email: leofn3@gmail.com
-    country: br
     affiliation: "Laboratório de Humanidades Digitais da UFBA (LABHDUFBA)"
     url: "https://github.com/leofn"
     corresponding: false
