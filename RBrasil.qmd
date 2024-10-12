@@ -60,6 +60,7 @@ Estamos falando de duas coisas distintas porém conectadas
     - Atualmente, o primeiro autor desta apresentação é o dono formal do grupo, após votação entre os admins para substituir o criador do grupo, que não tinha mais o interesse em continuar como admin
 - O grupo adere ao Código de Conduta dos Grupos de T.I. do Brasil no `telegram` <https://github.com/brazil-it-groups/code-of-conduct>
 
+![Código de Conduta](img/codigo-conduta.png){width="50%"}
 
 
 ## Números Rápidos 
