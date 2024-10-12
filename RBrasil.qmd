@@ -226,10 +226,10 @@ ggplotly(plot3) |>
 
 ## Objetivos do Grupo
 
-- compartilhar conhecimento
-- tirar dúvidas
-- colocar pessoas em contato
-- abrir portas
+- Compartilhar conhecimento
+- Tirar dúvidas
+- Colocar pessoas em contato
+- Abrir portas
 
 
 
