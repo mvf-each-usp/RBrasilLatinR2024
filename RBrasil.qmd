@@ -296,6 +296,14 @@ Programação em R
 - Sugestões, *brainstormings* e *solution racings*
 
 
+----
+
+![dúvidas](img/duvidas1.png){width="30%"} ![dúvidas](img/duvidas2.png){width="30%"} ![dúvidas](img/duvidas3.png){width="30%"}
+
+
+----
+
+![dúvidas](img/duvidas4.png){width="30%"} ![dúvidas](img/duvidas5.png){width="30%"} ![dúvidas](img/duvidas6.png){width="30%"}
 
 ### Interesses Circundantes
 
