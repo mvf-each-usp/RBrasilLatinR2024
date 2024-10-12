@@ -994,6 +994,7 @@ banned <- tidytext::get_stopwords("pt") |>
   dplyr::mutate(palavra = limpar(word))
 
 cores <- viridis::viridis(10, begin = 0, end = 0.8)
+# Agradecimentos
 
 d_msg |> 
   tidytext::unnest_tokens(palavra, texto) |> 
@@ -1007,5 +1008,11 @@ d_msg |>
   ))
 ```
 
+O nosso muito obrigado:
 
+- Ao `@marcusvv`, membro do `R Brasil` que originalmente postou no grupo a imagem (gerada pelo [ideograma.ai](https://ideograma.ai)) usada agora no slide de título e que sugeriu seu uso nesta apresentação
+- Aos organizadores do evento pelo espaço para a divulgação
+- Ao parecerista pelas sugestões de melhorias para esta apresentação
+- Aos admins do grupo pelo trabalho de bastidores cotidiano e pelas sugestões para esta apresentação
+- A todos os membros da R Brasil que tornam essa comunidade um lugar legal
 
