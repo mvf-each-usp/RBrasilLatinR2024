@@ -82,8 +82,145 @@ Até 25/08/2024,
 
 ## Evolução do Grupo ao Longo do Tempo
 
-- número de membros
-- número de mensagens
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(plotly)
+```
+
+
+```{r}
+#| label: monta-tabelas
+#| code-fold: show
+
+# carrega a raspagem
+raspagem <- 
+  readRDS("./data/raspagem.rds") |> 
+  group_split(tipo) 
+## e já separa em três grupos pelo tipo: entrada, postagem e service
+names(raspagem) <- map_chr(raspagem, \(tab) tab$tipo[1])
+# sapply(raspagem, nrow)
+```
+
+::: notes
+Apesar de alguns períodos de maior atividade, o grupo costuma ter pelo menos mil mensagens postadas por mês
+:::
+
+
+```{r}
+#| label: graficos-total-mensagens
+#| fig-height: 8
+#| fig-width: 16
+
+plot1 <- 
+  raspagem$postagem |> 
+  mutate(mes = data_hora |> floor_date("month") |> as_date()) |>
+  count(mes) |>
+  ggplot(aes(x = mes, y = n)) +
+  geom_line(color = "darkblue", size = 1) +  # Line color and thickness
+  geom_point(color = "darkred", size = 3) +  # Point color and size
+  scale_x_date(name = "Anos", date_breaks = "1 year", date_labels = "%Y") +
+  ylab("Total de Mensagens") +
+  ggtitle("Mensagens no R Brasil ao longo dos anos") +
+  theme_gray(base_size = 24)  # Apply the gray theme with a base font size
+
+# Convert the ggplot to a Plotly plot
+ggplotly(plot1)
+```
+
+
+
+## Evolução do Grupo ao Longo do Tempo
+
+
+::: notes
+O grupo costuma ter diminuição de atividade somente entre 03:00 e 11:00
+:::
+
+
+```{r}
+#| label: graficos-hora-interagimos
+#| fig-height: 8
+#| fig-width: 16
+
+plot2 <- 
+  raspagem$postagem |>
+  mutate(
+    hora = data_hora |> hour(),
+    ano = data_hora |> year() |> as.integer()
+  ) |>
+  group_by(ano, hora) |> 
+  summarise(
+    mensagens = n(),
+    .groups = "drop"
+  ) |> 
+  complete(ano, hora, fill = list(mensagens = 0)) |> 
+  ggplot() +
+  aes(x = hora, y = mensagens, frame = ano) +
+  geom_segment(aes(xend = hora, yend = mensagens), y = 0, color = "darkblue", size = 1) +
+  geom_point(color = "darkred", size = 3) +
+  ylab("Total de Mensagens") +
+  scale_x_continuous(labels = 0:23, breaks = 0:23) +
+  ggtitle("Total mensal de mensagens segundo a hora do dia") +
+  theme_gray(base_size = 24)
+ggplotly(plot2) |> 
+  animation_opts(
+    frame = 500, 
+    easing = "linear",
+    redraw = FALSE,
+    transition = 500
+  ) |> 
+  # animation_button(x = 1, xanchor = "right", y = 0, yanchor = "bottom") |>
+  animation_slider(currentvalue = list(prefix = "ano "))
+```
+
+
+
+
+## Evolução do Grupo ao Longo do Tempo
+
+::: notes
+O grupo costuma ter mais atividade entre terça e sexta
+:::
+
+
+```{r}
+#| label: graficos-dia-semana
+#| fig-height: 8
+#| fig-width: 16
+
+plot3 <- 
+  raspagem$postagem |>
+  mutate(
+    wd = data_hora |> wday(label = TRUE),
+    ano = data_hora |> year() |> as.integer()
+  ) |>
+  group_by(ano, wd) |> 
+  summarise(
+    mensagens = n(),
+    .groups = "drop"
+  ) |> 
+  complete(ano, wd, fill = list(mensagens = 0)) |>
+  ggplot() +
+  aes(x = wd, y = mensagens, frame = ano) +
+  geom_segment(aes(xend = wd, yend = mensagens), y = 0, color = "darkblue", size = 1) +
+  geom_point(color = "darkred", size = 3) +
+  ylab("Total de Mensagens") +
+  xlab("Dia da semana") +
+  ggtitle("Total mensal de mensagens segundo o dia da semana") +
+  theme_gray(base_size = 24)
+ggplotly(plot3) |> 
+  animation_opts(
+    frame = 500, 
+    easing = "linear",
+    redraw = FALSE,
+    transition = 500
+  ) |> 
+  # animation_button(x = 1, xanchor = "right", y = 0, yanchor = "bottom") |>
+  animation_slider(currentvalue = list(prefix = "ano "))
+```
 
 
 
