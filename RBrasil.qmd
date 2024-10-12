@@ -305,6 +305,11 @@ Programação em R
 
 ![dúvidas](img/duvidas4.png){width="30%"} ![dúvidas](img/duvidas5.png){width="30%"} ![dúvidas](img/duvidas6.png){width="30%"}
 
+
+
+
+
+## Diversidade de Interesses
 ### Interesses Circundantes
 
 O que afeta e é afetado pelo uso do R
