@@ -48,7 +48,6 @@ execute:
 Faltam autorizar o uso dos prints:
 
 - Halian
-- Anders Filho
 - Adriano Mello
 - Ían Muliterno
 - DenizeGeo
