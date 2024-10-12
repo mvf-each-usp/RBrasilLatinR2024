@@ -406,9 +406,8 @@ O aprendizado da linguagem está diretamente conectado com a relação afetiva q
 
 
 
-## A importância de Ter uma Comunidade para o Aprendizado da Linguagem
+## A importância de ter uma Comunidade para o Aprendizado da Linguagem
 
-- essas comunidades não desempenham o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT, 
 
 
 
@@ -465,6 +464,11 @@ raspagem <-
 names(raspagem) <- map_chr(raspagem, \(tab) tab$tipo[1])
 sapply(raspagem, nrow)
 ```
+- A comunidade é um espaço de aprendizado
+    - Nossa comunidade não desempenha o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT ou Copilot
+    - O grupo aqui é bem mais acessível e receptivo em comparação
+- Na R Brasil, não estamos jogando tênis, e sim frescobol
+    - O objetivo é manter a bola no ar o maior tempo possível
 
 
 ```{r}
