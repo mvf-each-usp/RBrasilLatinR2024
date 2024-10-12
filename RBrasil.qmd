@@ -409,7 +409,9 @@ O aprendizado da linguagem está diretamente conectado com a relação afetiva q
 ## A importância de ter uma Comunidade para o Aprendizado da Linguagem
 
 
+:::::: {.columns}
 
+::: {.column width=50%}
 
 - A comunidade é um espaço de aprendizado
     - Nossa comunidade não desempenha o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT ou Copilot
@@ -417,13 +419,17 @@ O aprendizado da linguagem está diretamente conectado com a relação afetiva q
 - Na R Brasil, não estamos jogando tênis, e sim frescobol
     - O objetivo é manter a bola no ar o maior tempo possível
 
+:::
 
 
 
+::: {.column width=10%}
+
+:::
 
 
 
-
+::: {.column width=40%}
 
 ```{r}
 #| label: prepara-graficos-wordcloud
@@ -440,21 +446,47 @@ limpar <-
 # tirar palavras que nao quero 
 banned <- 
   tidytext::get_stopwords("pt") |>
+  mutate(palavra = limpar(word)) |> 
+  pull(palavra)
 
 cores <- viridis::viridis(10, begin = 0, end = 0.8)
 ```
 
 ```{r}
+#| label: prepara-base-wordcloud
 
+base.wordcloud <- 
+  raspagem$postagem |>
+  select(texto) |> 
   tidytext::unnest_tokens(palavra, texto) |>
   mutate(palavra = limpar(palavra)) |>
+  filter(!palavra %in% c(0:100, str_c(0,1:9), banned)) |>
+  count(palavra, sort = TRUE)
 ```
 
 
 ```{r}
+#| label: graficos-wordcloud
+#| fig-width: 8
+#| fig-height: 8
+#| fig-asp: 1
+
+# wordcloud ---- 
+with(
+  base.wordcloud,
+  wordcloud::wordcloud(
+    palavra[1:500],
+    n[1:500]^(2/3),
+    scale = c(5, .1),
+    random.order = FALSE,
+    colors = cores
   )
+)
+```
 
+:::
 
+::::::
 
 
 
