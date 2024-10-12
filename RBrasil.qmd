@@ -252,14 +252,14 @@ Um grupo heterogêneo
 
 Temos no grupo
 
-- biólogos, ecologistas
-- computeiros, estatísticos, matemáticos
-- advogados, jurimestristas
-- geógrafos, geólogos, gestores ambientais
-- médicos, psicólogos, psicometristas
-- mercadólogos, administradores, economistas
-- engenheiros
-- jornalistas
+- Biólogos, ecologistas
+- Computeiros, estatísticos, matemáticos
+- Advogados, jurimestristas
+- Geógrafos, geólogos, gestores ambientais
+- Médicos, psicólogos, psicometristas
+- Mercadólogos, administradores, economistas
+- Engenheiros
+- Jornalistas
 - entre outras
 
 
@@ -268,10 +268,10 @@ Temos no grupo
 
 Temos no grupo
 
-- profissionais e estudantes
-- setor público, setor privado e terceiro setor
-- profissionais e pesquisadores acadêmicos
-- freelancers, empregados e empreendedores
+- Profissionais e estudantes
+- Setor público, setor privado e terceiro setor
+- Profissionais de mercado e pesquisadores acadêmicos
+- Freelancers, funcionários e empreendedores
 
 
 
@@ -286,13 +286,14 @@ Temos no grupo
 
 
 
+## Diversidade de Interesses
 ### Interesses Específicos
 
 Programação em R
 
 - Apresentações de dúvidas e dificuldades com código
 - Pedidos de colaboração em código e repositórios
-- Sugestões, brainstormings e *solution racings*
+- Sugestões, *brainstormings* e *solution racings*
 
 
 
@@ -303,8 +304,8 @@ O que afeta e é afetado pelo uso do R
 - Modelagem e análise de dados
 - Métodos estatísticos, técnicas de machine learning etc.
 - Manuseio de dados
-- Tecnologias para big data
-- Visualização de dados e dashboard
+- Tecnologias para *big data*
+- Visualização de dados e *dashboard*
 - Raspagem e mineiração de dados
 - Desenvolvimento de pacotes
 - Ciência de dados e soluções integrativas
@@ -314,26 +315,28 @@ O que afeta e é afetado pelo uso do R
 
 
 
+## Diversidade de Interesses
 ### Interesses em Aplicações Específicas
 
 Onde o R tem sido usado pelos membros do grupo
 
-- jurimetria
-- dados ambientais
-- dados georreferenciados
-- dados abertos e transparência pública
-- jornalismo de dados
-- negócios
+- Jurimetria
+- Dados ambientais
+- Dados georreferenciados
+- Dados abertos e transparência pública
+- Jornalismo de dados
+- Negócios
 - entre outros
 
 
 
+## Diversidade de Interesses
 ### Divulgação
 
 Onde, quando e como o R tem alavancado seus usuários
 
-- vagas e oportunidades
-- cursos sobre R e afins
+- Vagas e oportunidades
+- Cursos sobre R e afins
 
 
 
