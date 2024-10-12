@@ -411,16 +411,6 @@ O aprendizado da linguagem está diretamente conectado com a relação afetiva q
 
 
 
-## A Necessidade de Parâmetros Relacionais e Limites
-
-A necessidade e importância de estabelecer parâmetros relacionais e limites para cuidar dessa comunidade e manter uma ordem que permita ela funcionar sem sufocar nem a dinâmica do convívio e nem as troca de experiências e de informações entre seus membros
-
-- políticas estritas de respeito e convívio
-- nesse sentido, uma lição importante foi a escolha pela liberalidade nas discussões no grupo, que seria brutalmente diminuída se o corpo de admins utilizasse políticas estritas de off-topic
-- na R Brasil, as discussões frequentemente realizam longas incursões para fora do R com tranquilidade e naturalidade, a ponto de um membro da comunidade precisar fazer muita força para receber uma carimbada de off-topic por parte dos admins
-
-
-
 # Para Entrar no Grupo
 
 ## É só entrar?
@@ -803,8 +793,10 @@ library('abjutils')
 # tirar palavras que nao quero
 banned <- tidytext::get_stopwords("pt") |>
   dplyr::mutate(palavra = limpar(word))
+## A Necessidade de Parâmetros Relacionais e Limites
 
 cores <- viridis::viridis(10, begin = 0, end = 0.8)
+A necessidade e importância de estabelecer parâmetros relacionais e limites para cuidar dessa comunidade e manter uma ordem que permita ela funcionar sem sufocar nem a dinâmica do convívio e nem as troca de experiências e de informações entre seus membros
 
 df |>
   tidytext::unnest_tokens(palavra, texto) |>
@@ -816,6 +808,9 @@ df |>
     min.freq = 80, random.order = FALSE,
     colors = cores
   ))
+- Políticas estritas de respeito e convívio
+- Nesse sentido, uma lição importante foi a escolha pela liberalidade nas discussões no grupo, que seria brutalmente diminuída se o corpo de admins utilizasse políticas estritas de off-topic
+- Na R Brasil, as discussões frequentemente realizam longas incursões para fora do R com tranquilidade e naturalidade, a ponto de um membro da comunidade precisar fazer muita força para receber uma carimbada de off-topic por parte dos admins
 
 ```
 
