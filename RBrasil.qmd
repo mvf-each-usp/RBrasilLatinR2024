@@ -44,6 +44,18 @@ execute:
   dev: png
 ---
 
+
+Faltam autorizar o uso dos prints:
+
+- Halian
+- Anders Filho
+- Adriano Mello
+- Ían Muliterno
+- DenizeGeo
+- andresimi
+
+
+
 # R Brasil no `telegram`
 
 ## Mas é *O* R Brasil ou é *A* R Brasil?
