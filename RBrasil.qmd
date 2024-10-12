@@ -44,13 +44,11 @@ execute:
   dev: png
 ---
 
+# R Brasil no `telegram`
 
+## Mas é *O* R Brasil ou é *A* R Brasil?
 
-
-
-# R Brasil no Telegram
-
-## É *O* R Brasil ou é *A* R Brasil?
+Estamos falando de duas coisas distintas porém conectadas
 
 - O *grupo* `R Brasil` do `telegram`
 - A *comunidade* R Brasil de membros do *grupo* `R Brasil`
