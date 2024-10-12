@@ -365,7 +365,7 @@ Onde, quando e como o R tem alavancado seus usuários
 
 # Resultados das Interações entre os Membros da R Brasil
 
-## Alguns grupos surgidos do R Brasil 
+## Grupos surgidos do R Brasil 
 
 Da interação entre os membros do grupo, surgiram pelo menos três novos grupos do `telegram`
 
@@ -375,16 +375,16 @@ Da interação entre os membros do grupo, surgiram pelo menos três novos grupos
 
 
 
-## Iniciativas que Surgiram de Membros que se Conheceram no R Brasil
+## Iniciativas que Surgiram Dentro do R Brasil
 
 Também surgiram da interação dos membros do grupo
 
-- Dadoscope
+- O blog de jornalismo de dados Dadoscope
     - <https://github.com/dadoscope>
     - <https://revistaforum.com.br/opiniao/2019/7/10/dadoscope-novo-blog-na-forum-traz-jornalismo-de-dados-58299.html>
-- diversas colaborações em freelance
-- várias colaborações acadêmica
-- algumas startups
+- Diversas colaborações em freelance
+- Várias colaborações acadêmica
+- Algumas startups
 - entre outras
 
 
