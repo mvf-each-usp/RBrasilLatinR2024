@@ -411,23 +411,6 @@ O aprendizado da linguagem está diretamente conectado com a relação afetiva q
 
 
 
-# Para Entrar no Grupo
-
-## É só entrar?
-
-Sim:
-
-- grupo aberto, então o acesso é livre
-- só tem que pelo captcha da Rose, o nosso bot anti-bots
-
-
-
-## Onde Então?
-
-<https://t.me/rbrasiloficial>
-
-
-
 # Agradecimentos
 
 - Ao `@marcusvv`, membro do `R Brasil` que originalmente postou no grupo a imagem (gerada pelo [ideograma.ai](https://ideograma.ai)) usada agora no slide de título e que sugeriu seu uso nesta apresentação
@@ -815,15 +798,25 @@ df |>
 ```
 
 
+# Para Entrar no Grupo
+
+## É só entrar?
+
+Sim:
+
+- grupo aberto, então o acesso é livre
+- só tem que passar pelo captcha da Rose, o nosso bot anti-bots
 
 
 
+## Onde então? Como faz?
 
+- No navegador: <https://t.me/rbrasiloficial>
+- No `telegram`: busque por "R Brasil" ou por "@rbrasiloficial"
 
+## Se você tiver interesse em entrar na R Brasil,...
 
-
-
-
+...você será muito bemvindo 😄
 
 
 # Agradecimentos
