@@ -15,38 +15,33 @@ authors:
 format: 
   revealjs:
     embed-resources: true
-    toc: true
-    toc_levels: 2
-    number_sections: true
-    # slideNumber: c/t
+    toc: false
     code-fold: false
     center: true
-    theme: white
-    transition: slide
-    slideNumber: true
+    theme: sky
+    transition: fade
+    slideNumber: c/t
     width: 1920
     height: 1080
-    progress: true
-    history: true
 execute: 
   cache: true
   echo: false
   error: false
   warning: false
   message: false
-  fig.width: 6
-  fig.height: 4
-  fig.retina: 2
-  dev: png
   out.width: '100%'
   out.height: '100%'
+  fig.width: '6cm'
+  fig.height: '4cm'
+  # fig.retina: 2
   fig.align: 'center'
   fig.cap: 'center'
   fig.pos: 'H'
   fig.subcap: 'center'
-  fig.asp: 1
-  dpi: 96
+  # fig.asp: 1
   fig.show: 'hold'
+  # dpi: 96
+  dev: png
 ---
 
 ```{r}
