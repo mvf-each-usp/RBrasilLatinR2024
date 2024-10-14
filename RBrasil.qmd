@@ -5,7 +5,7 @@ authors:
   - name: Marcelo Ventura Freire
     email: mvf@usp.br
     affiliation: "Escola de Artes, Ciências e Humanidades da USP (EACHUSP)"
-    url: ["https://t.me/rbrasiloficial", "https://github.com/mvf-each-usp"]
+    url: "https://github.com/mvf-each-usp"
     corresponding: true
   - name: Leonardo Fernandes Nascimento
     email: leofn3@gmail.com
@@ -20,7 +20,7 @@ format:
     center: true
     theme: sky
     transition: fade
-    slideNumber: c/t
+    slideNumber: true
     width: 1920
     height: 1080
 execute: 
@@ -33,14 +33,11 @@ execute:
   out.height: '100%'
   fig.width: '6cm'
   fig.height: '4cm'
-  # fig.retina: 2
   fig.align: 'center'
   fig.cap: 'center'
   fig.pos: 'H'
   fig.subcap: 'center'
-  # fig.asp: 1
   fig.show: 'hold'
-  # dpi: 96
   dev: png
 ---
 
