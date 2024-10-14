@@ -49,6 +49,7 @@ Faltam autorizar o uso dos prints:
 
 
 
+
 # R Brasil no `telegram`
 
 ## Mas é *O* R Brasil ou é *A* R Brasil?
@@ -58,6 +59,9 @@ Estamos falando de duas coisas distintas porém conectadas
 - O *grupo* `R Brasil` do `telegram`
 - A *comunidade* R Brasil de membros do *grupo* `R Brasil`
 
+
+
+
 # O *Grupo* `R Brasil` no `telegram`
 
 - Grupo criado no `telegram` por Felipe Barros em 5 de fevereiro de 2017
@@ -66,6 +70,8 @@ Estamos falando de duas coisas distintas porém conectadas
 - O grupo adere ao Código de Conduta dos Grupos de T.I. do Brasil no `telegram` <https://github.com/brazil-it-groups/code-of-conduct>
 
 ![Código de Conduta](img/codigo-conduta.png){width="50%"}
+
+
 
 
 ## Números Rápidos 
@@ -82,6 +88,7 @@ Até 25/08/2024,
 - 65 mensagens de voz
 - 13 admins
 - 1 servidor no discord de backup para emergências
+
 
 
 
@@ -108,6 +115,7 @@ raspagem <-
 names(raspagem) <- map_chr(raspagem, \(tab) tab$tipo[1])
 # sapply(raspagem, nrow)
 ```
+
 
 ::: notes
 Apesar de alguns períodos de maior atividade, o grupo costuma ter pelo menos mil mensagens postadas por mês
@@ -137,8 +145,8 @@ ggplotly(plot1)
 
 
 
-## Evolução do Grupo ao Longo do Tempo
 
+## Evolução do Grupo ao Longo do Tempo
 
 ::: notes
 O grupo costuma ter diminuição de atividade somente entre 03:00 e 11:00
@@ -249,12 +257,14 @@ ggplotly(plot3) |>
 
 
 
+
 ## Objetivos do Grupo
 
 - Compartilhar conhecimento
 - Tirar dúvidas
 - Colocar pessoas em contato
 - Abrir portas
+
 
 
 
@@ -270,6 +280,7 @@ Um grupo heterogêneo
     - Interesses em aplicações específicas
     - Divulgação
 - Variabilidade de Localização
+
 
 
 
@@ -289,6 +300,7 @@ Temos no grupo
 
 
 
+
 ## Variabilidade de Atuações 
 
 Temos no grupo
@@ -297,6 +309,7 @@ Temos no grupo
 - Quem trabalha no Setor público, no setor privado e no terceiro setor
 - Profissionais de mercado e pesquisadores acadêmicos
 - Freelancers, funcionários e empreendedores
+
 
 
 
@@ -311,6 +324,7 @@ Temos no grupo
 
 
 
+
 ## Variabilidade de Interesses
 ### Interesses Específicos
 
@@ -321,9 +335,13 @@ Programação em R
 - Sugestões, *brainstormings* e *solution racings*
 
 
+
+
 ----
 
 ![dúvidas](img/duvidas1.png){width="30%"} ![dúvidas](img/duvidas2.png){width="30%"} ![dúvidas](img/duvidas3.png){width="30%"}
+
+
 
 
 ----
@@ -353,6 +371,7 @@ O que afeta e é afetado pelo uso do R
 
 
 
+
 ## Variabilidade de Interesses
 ### Interesses em Aplicações Específicas
 
@@ -368,6 +387,7 @@ Onde o R tem sido usado pelos membros do grupo
 
 
 
+
 ## Variabilidade de Interesses
 ### Divulgação
 
@@ -375,6 +395,7 @@ Onde, quando e como o R tem alavancado seus usuários
 
 - Vagas e oportunidades
 - Cursos sobre R e afins
+
 
 
 
@@ -388,6 +409,7 @@ Onde, quando e como o R tem alavancado seus usuários
 
 
 
+
 # Resultados das Interações entre os Membros da R Brasil
 
 ## Grupos surgidos do R Brasil 
@@ -397,6 +419,7 @@ Da interação entre os membros do grupo, surgiram pelo menos três novos grupos
 - Web-scraping Brasil (<https://t.me/+Z4d0O-ZQXsQyNDJk>)
 - Bio-R
 - Shiny Brasil (<https://t.me/shinybrasi>)
+
 
 
 
@@ -414,11 +437,14 @@ Também surgiram da interação dos membros do grupo
 
 
 
+
 # Lições Aprendidas ao Longo dos Anos
 
 - O aprendizado da linguagem está diretamente conectado com a relação afetiva com a comunidade
 - A importância de ter uma comunidade para o aprendizado da linguagem
 - A necessidade de parâmetros relacionais e limites
+
+
 
 
 ## O aprendizado da linguagem está diretamente conectado com a relação afetiva com a comunidade
@@ -440,6 +466,7 @@ Também surgiram da interação dos membros do grupo
 
 
 
+
 ## A importância de ter uma Comunidade para o Aprendizado da Linguagem
 
 :::::: {.columns}
@@ -458,7 +485,6 @@ A comunidade é um espaço de aprendizado
 ::: {.column width=10%}
 
 :::
-
 
 
 ::: {.column width=40%}
@@ -536,6 +562,7 @@ with(
 
 
 
+
 ## A Necessidade de Parâmetros Relacionais e Limites
 
 - É necessário definir parâmetros relacionais e limites 
@@ -543,6 +570,7 @@ with(
     - Políticas estritas de respeito e convívio
 - Não pode sufocar a dinâmica do convívio nem as troca de experiências e de informações entre seus membros
     - Liberalidade com as políticas de off-topic
+
 
 ::: notes
 
@@ -553,6 +581,7 @@ with(
 - Na R Brasil, as discussões frequentemente realizam longas incursões para fora do R com tranquilidade e naturalidade, a ponto de um membro da comunidade precisar fazer muita força para receber uma carimbada de off-topic por parte dos admins
 
 :::
+
 
 
 
@@ -567,18 +596,23 @@ Sim:
 
 
 
+
 ## Onde então? Como faz?
 
 - No navegador: <https://t.me/rbrasiloficial>
 - No `telegram`: busque por "R Brasil" ou por "@rbrasiloficial"
+
+
+
 
 ## Se você tiver interesse em entrar na R Brasil,...
 
 ...você será muito bem vindo 😄
 
 
-# Agradecimentos
 
+
+# Agradecimentos
 
 O nosso muito obrigado:
 
@@ -587,4 +621,3 @@ O nosso muito obrigado:
 - Ao parecerista pelas sugestões de melhorias para esta apresentação
 - Aos admins do grupo pelo trabalho de bastidores cotidiano e pelas sugestões para esta apresentação
 - A todos os membros da R Brasil que tornam essa comunidade um lugar legal
-
