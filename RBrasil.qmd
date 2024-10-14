@@ -268,18 +268,18 @@ ggplotly(plot3) |>
 
 Um grupo heterogêneo
 
-- Diversidade de Formações 
-- Diversidade de Atuações 
-- Diversidade de Interesses
+- Variabilidade de Formações 
+- Variabilidade de Atuações 
+- Variabilidade de Interesses
     - Interesses específicos
     - Interesses circundantes
     - Interesses em aplicações específicas
     - Divulgação
-- Diversidade de Localização
+- Variabilidade de Localização
 
 
 
-## Diversidade de Formações 
+## Variabilidade de Formações 
 
 Temos no grupo
 
@@ -295,7 +295,7 @@ Temos no grupo
 
 
 
-## Diversidade de Atuações 
+## Variabilidade de Atuações 
 
 Temos no grupo
 
@@ -306,7 +306,7 @@ Temos no grupo
 
 
 
-## Diversidade de Interesses
+## Variabilidade de Interesses
 
 Temos no grupo
 
@@ -317,7 +317,7 @@ Temos no grupo
 
 
 
-## Diversidade de Interesses
+## Variabilidade de Interesses
 ### Interesses Específicos
 
 Programação em R
@@ -340,7 +340,7 @@ Programação em R
 
 
 
-## Diversidade de Interesses
+## Variabilidade de Interesses
 ### Interesses Circundantes
 
 O que afeta e é afetado pelo uso do R
@@ -359,7 +359,7 @@ O que afeta e é afetado pelo uso do R
 
 
 
-## Diversidade de Interesses
+## Variabilidade de Interesses
 ### Interesses em Aplicações Específicas
 
 Onde o R tem sido usado pelos membros do grupo
@@ -374,7 +374,7 @@ Onde o R tem sido usado pelos membros do grupo
 
 
 
-## Diversidade de Interesses
+## Variabilidade de Interesses
 ### Divulgação
 
 Onde, quando e como o R tem alavancado seus usuários
@@ -384,7 +384,7 @@ Onde, quando e como o R tem alavancado seus usuários
 
 
 
-## Diversidade de Localização
+## Variabilidade de Localização
 
 - Membros originários do Brasil inteiro
 - Também há vários portugueses na R Brasil
