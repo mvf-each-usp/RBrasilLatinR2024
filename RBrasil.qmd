@@ -47,11 +47,8 @@ execute:
 
 Faltam autorizar o uso dos prints:
 
-- Halian
 - Adriano Mello
-- Ían Muliterno
 - DenizeGeo
-- andresimi
 
 
 
