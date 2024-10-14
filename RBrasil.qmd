@@ -423,29 +423,36 @@ Também surgiram da interação dos membros do grupo
 
 ## O aprendizado da linguagem está diretamente conectado com a relação afetiva com a comunidade
 
-O aprendizado da linguagem está diretamente conectado com a relação afetiva que você vai estabelecer com a comunidade dessa linguagem, e não somente com a linguagem em si e suas características, méritos e deméritos
+- O aprendizado da linguagem 
+    - relação afetiva com a comunidade dessa linguagem
+    - mais do que somente entender características, méritos e deméritos da linguagem
+- Uma comunidade acolhe quem está começando
 
+
+::: notes
+
+- O aprendizado da linguagem está diretamente conectado com a relação afetiva que você vai estabelecer com a comunidade dessa linguagem, e não somente com a linguagem em si e suas características, méritos e deméritos
 - O aprendizado da linguagem é apenas um aspecto de um aprendizado maior, que é o aprendizado da cultura da linguagem, da cultura da análise de dados e das tecnologias nela envolvidas, da cultura do debate 
 - Quem já está imerso nessa cultura já a incorporou, mas a pessoa que está começando a entrar nessa cultura através do aprendizado de uma linguagem (como o R) não sabe exatamente o que pode falar num grupo novo, o que é complexo e o que é simples na linguagem e na cultura subjacente
 - Nesse sentido, nossa comunidade é acolhedora, pois deixamos as pessoas falarem, discutimos e, quando é o caso, quem tem mais experiência propões orientação para quem apresenta suas dúvidas
+
+:::
 
 
 
 ## A importância de ter uma Comunidade para o Aprendizado da Linguagem
 
-
 :::::: {.columns}
 
 ::: {.column width=50%}
 
-- A comunidade é um espaço de aprendizado
-    - Nossa comunidade não desempenha o mesmo papel que a documentação da linguagem, que um fórum técnico como o Stack Overflow ou que uma ferramenta como o ChatGPT ou Copilot
-    - O grupo aqui é bem mais acessível e receptivo em comparação
-- Na R Brasil, não estamos jogando tênis, e sim frescobol
-    - O objetivo é manter a bola no ar o maior tempo possível
+A comunidade é um espaço de aprendizado
+
+- Não é um Stack Overflow 
+- Não é um ChatGPT
+- É mais acessível e receptivo em comparação
 
 :::
-
 
 
 ::: {.column width=10%}
@@ -514,14 +521,38 @@ with(
 ::::::
 
 
+::: notes
+
+- A comunidade é um espaço de aprendizado
+    - Nossa comunidade não desempenha o mesmo papel que 
+        - a documentação da linguagem,
+        - um fórum técnico como o Stack Overflow ou 
+        - uma ferramenta como o ChatGPT ou Copilot
+    - O grupo aqui é bem mais acessível e receptivo em comparação
+- Na R Brasil, não estamos jogando tênis, e sim frescobol
+    - O objetivo é manter a bola no ar o maior tempo possível
+
+:::
+
+
 
 ## A Necessidade de Parâmetros Relacionais e Limites
 
-A necessidade e importância de estabelecer parâmetros relacionais e limites para cuidar dessa comunidade e manter uma ordem que permita ela funcionar sem sufocar nem a dinâmica do convívio e nem as troca de experiências e de informações entre seus membros
+- É necessário definir parâmetros relacionais e limites 
+    - Ordem que permita a comunidade funcionar 
+    - Políticas estritas de respeito e convívio
+- Não pode sufocar a dinâmica do convívio nem as troca de experiências e de informações entre seus membros
+    - Liberalidade com as políticas de off-topic
 
-- Políticas estritas de respeito e convívio
-- Nesse sentido, uma lição importante foi a escolha pela liberalidade nas discussões no grupo, que seria brutalmente diminuída se o corpo de admins utilizasse políticas estritas de off-topic
+::: notes
+
+- Aprendemos que é necessário e importante de estabelecer o que é aceitável e o que não é no convívio
+    - Daí as políticas estritas de respeito e convívio
+- Mas não pode sufocar as troca de experiências e de informações
+    - Nesse sentido, uma lição importante foi a escolha pela liberalidade nas discussões no grupo, que seria brutalmente diminuída se o corpo de admins utilizasse políticas estritas de off-topic
 - Na R Brasil, as discussões frequentemente realizam longas incursões para fora do R com tranquilidade e naturalidade, a ponto de um membro da comunidade precisar fazer muita força para receber uma carimbada de off-topic por parte dos admins
+
+:::
 
 
 
