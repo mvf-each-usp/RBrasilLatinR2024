@@ -1,5 +1,6 @@
 ---
-title: "A Comunidade R Brasil no Telegram "
+title: |
+    A Comunidade \  `R Brasil` \  no Telegram
 subtitle: "![catioRinho -- imagem postada por ](img/catioRo.jpg){width=30%}"
 authors:
   - name: Marcelo Ventura Freire
@@ -31,8 +32,8 @@ execute:
   message: false
   out.width: '100%'
   out.height: '100%'
-  fig.width: '6cm'
-  fig.height: '4cm'
+  fig.width: '9cm'
+  fig.height: '6cm'
   fig.align: 'center'
   fig.cap: 'center'
   fig.pos: 'H'
@@ -41,27 +42,23 @@ execute:
   dev: png
 ---
 
+# `R Brasil` \ no \ `telegram`
 
-Faltam autorizar o uso dos prints:
+<!-- Faltam autorizar o uso dos prints: -->
+<!-- - Adriano Mello -->
+<!-- - DenizeGeo -->
 
-- DenizeGeo
-
-
-
-
-# R Brasil no `telegram`
-
-## Mas é *O* R Brasil ou é *A* R Brasil?
+## *O* \ R Brasil? *A* \ R Brasil?
 
 Estamos falando de duas coisas distintas porém conectadas
 
-- O *grupo* `R Brasil` do `telegram`
-- A *comunidade* R Brasil de membros do *grupo* `R Brasil`
+- O *grupo* \ `R Brasil` \ no \ `telegram`
+- A *comunidade* R Brasil de membros do *grupo* \ `R Brasil`
 
 
 
 
-# O *Grupo* `R Brasil` no `telegram`
+# O *Grupo* \ \ `R Brasil` \ no \ `telegram`
 
 - Grupo criado no `telegram` por Felipe Barros em 5 de fevereiro de 2017
 - Hoje em dia, a propriedade do grupo é compartilhada pelos admins do grupo
@@ -123,8 +120,8 @@ Apesar de alguns períodos de maior atividade, o grupo costuma ter pelo menos mi
 
 ```{r}
 #| label: graficos-total-mensagens
-#| fig-height: 8
-#| fig-width: 16
+#| fig-height: 10
+#| fig-width: 20
 
 plot1 <- 
   raspagem$postagem |> 
@@ -154,8 +151,8 @@ O grupo costuma ter diminuição de atividade somente entre 03:00 e 11:00
 
 ```{r}
 #| label: graficos-hora-interagimos
-#| fig-height: 8
-#| fig-width: 16
+#| fig-height: 10
+#| fig-width: 20
 
 plot2 <- 
   raspagem$postagem |>
@@ -179,7 +176,7 @@ plot2 <-
   theme_gray(base_size = 24)
 ggplotly(plot2) |> 
   animation_opts(
-    frame = 2000, 
+    frame = 1000, 
     easing = "linear",
     redraw = FALSE,
     transition = 1000
@@ -210,8 +207,8 @@ O grupo costuma ter mais atividade entre terça e sexta
 
 ```{r}
 #| label: graficos-dia-semana
-#| fig-height: 8
-#| fig-width: 16
+#| fig-height: 10
+#| fig-width: 20
 
 plot3 <- 
   raspagem$postagem |>
@@ -235,7 +232,7 @@ plot3 <-
   theme_gray(base_size = 24)
 ggplotly(plot3) |> 
   animation_opts(
-    frame = 2000, 
+    frame = 1000, 
     easing = "linear",
     redraw = FALSE,
     transition = 1000
@@ -267,7 +264,7 @@ ggplotly(plot3) |>
 
 
 
-# A *Comunidade* R Brasil
+# A *Comunidade* \ R Brasil
 
 Um grupo heterogêneo
 
@@ -620,3 +617,14 @@ O nosso muito obrigado:
 - Ao parecerista pelas sugestões de melhorias para esta apresentação
 - Aos admins do grupo pelo trabalho de bastidores cotidiano e pelas sugestões para esta apresentação
 - A todos os membros da R Brasil que tornam essa comunidade um lugar legal
+
+
+\ \   
+
+\ \   
+
+Para Entrar no Grupo
+
+- No navegador: <https://t.me/rbrasiloficial>
+- No `telegram`: busque por "R Brasil" ou por "@rbrasiloficial"
+
